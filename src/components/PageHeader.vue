@@ -16,7 +16,10 @@ export default {
         <div class="left">
             <span class="language">English</span>
             &nbsp;
-            <i class="fa-solid fa-chevron-down"></i>
+
+            <a href="#">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
         </div>
 
         <div class="right">
@@ -33,7 +36,7 @@ export default {
 
     </div>
 
-
+    <hr class="complete-hr" />
 
     <div class="bottom-header">
 
@@ -43,6 +46,13 @@ export default {
 <style scoped lang="scss">
 @use '../styles/partials/mixins';
 @use '../styles/partials/colors' as*;
+
+.complete-hr {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100vw;
+}
 
 .top-header,
 .bottom-header {
@@ -57,6 +67,10 @@ export default {
     .left {
         i {
             font-size: 8px;
+            text-decoration: none;
+            color: $grey-dark;
+
+
         }
     }
 
