@@ -187,6 +187,14 @@ export default {
                 color: $white;
                 font-size: 12px;
                 width: 40px;
+
+                &:hover {
+                    background-color: $hover-button;
+                }
+
+                &:active {
+                    background-color: $active-button;
+                }
             }
 
             input {

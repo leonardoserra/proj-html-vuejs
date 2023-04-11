@@ -23,5 +23,14 @@ button {
     border: none;
     border-radius: 20px;
     font-size: 10px;
+
+    &:hover {
+        background-color: $hover-button;
+    }
+
+    &:active {
+        background-color: $active-button;
+    }
+
 }
 </style>
