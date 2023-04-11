@@ -1,6 +1,5 @@
 <script >
 import { store } from '../store.js';
-import MySearchBar from './MySearchBar.vue'
 export default {
     name: 'PageHeader',
     data() {
@@ -9,7 +8,7 @@ export default {
         }
     },
     components: {
-        MySearchBar
+
     }
 }
 </script>
@@ -47,13 +46,27 @@ export default {
             <img src="../assets/images/MasterStudy_logo.svg" alt="master_study_logo" />
         </div>
 
-        <MySearchBar />
+        <div class="search-section">
+            <div class="category-filter">
+                <a href="#">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <span>CATEGORY</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="search courses" />
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+
 
     </div>
     <div class="client-plan"></div>
 
     <div class="user-login"></div>
 </template>
+
+
 
 <style scoped lang="scss">
 @use '../styles/partials/mixins';
@@ -125,14 +138,46 @@ export default {
         }
     }
 
-    .search-bar {
 
+    .search-section {
         @include mixins.flex-align-center;
 
         .category-filter {
+
             color: $grey-dark;
             font-size: 8px;
+            margin-right: 8px;
+
+            span {
+                margin-left: 5px;
+            }
         }
+
+        .search-bar {
+            @include mixins.flex-align-center;
+
+            input,
+            button {
+                height: 30px;
+                border: none;
+            }
+
+            button {
+                background-color: $button-blue;
+                color: $white;
+                font-size: 12px;
+                width: 30px;
+            }
+
+            input {
+                background-color: $grey-light;
+                color: $grey-dark;
+                font-size: 10px;
+                padding-left: 5px;
+                width: 200px;
+            }
+        }
+
     }
 
 }
