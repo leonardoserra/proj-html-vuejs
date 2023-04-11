@@ -1,0 +1,140 @@
+Progetto Serra Leonardo
+
+Scadenza: giovedì 13 Aprile 2023 ore 18:00
+
+Analisi:
+
+Macro-sezioni:
+
+    -Header:
+        -top-header:
+            (usando flex)
+            -sx lingue selezionabili(non serve implementare inizialmente)
+            -dx:
+                -user-sections(prendi da array data o store)
+                -socials-icons
+
+        -bottom-header:
+            (usando flex)
+            -logo(unico file)
+            -searchbar(menu categorie, input, tasto cerca)
+            -client-section(scegli se teacher o enterprise)
+            -login-zone(login, sign up button, icona flag)
+
+    -Main:
+        -jumbotron(si ripete anche dopo quindi component):
+            (usando flex)
+            -parte sx:
+                -h2
+                -p
+                -button
+            -parte dx:
+                -immagine jumbotron
+
+        -cards:
+            (usando flex)
+            -3 cards uguali ogni card ha:
+                -icona
+                -h4
+                -p(piccolo)
+
+        -categories-gallery:
+            (usando flex)
+            -3 righe e 3 colonne dove la prima card
+                occupa 2 righe e 2 colonne con grow(forse)
+
+                ogni card ha immagine e mini titolo
+
+        -jumbotron2 uguale al primo:
+            (usando flex)
+          -parte sx:
+                -h2
+                -p
+                -button
+            -parte dx:
+                -immagine jumbotron
+
+        -courses-section:
+            -h2
+            -categories-list (dinamico da data o store)
+            -card-container: (2 righe 6 colonne)
+                -single-card(component):
+                    -img
+                    -h4(categoria>)
+                    -p o h3
+                    -hr
+                    -2 casi diversi:
+                        (usando flex)
+                            -star-vote(dinamico in teoria) + numero
+                        oppure:
+                            -durata corso(icona + tempo)
+                            -prezzo (full con barra + scontato)
+            -button(show all)
+
+        -statistics-section:
+        -(bacground da usare)
+        -title h2
+        -p
+        -data-grid:
+            (usando flex)
+            -4 colonne 1 riga ogni colonna ha:
+                -numero in h2
+                -h3 soggetto in questione
+        
+        -banner-newsletter:
+            (usando flex)
+            -dx:
+                -h3
+                -p(piccolo)
+            -sx:
+                -form:
+                    -h4
+                    -input-mail + button-subscribe
+                
+        -popular-courses: (quasi uguale a courses-section)
+            (usando flex)
+            -h2
+            -p
+            -cards 1 riga 6 colonne:
+                -card:(component gia usato)
+
+        -plan-section:
+            -container(2 col)
+            (usando flex)
+                -card-plan(component):
+                    -sx img
+                    -dx:
+                        -h3
+                        -p
+                        -button
+            
+        -testimonial-section:
+            (background testimonial)
+            -balloon(nuvoletta):
+                -h3
+                -p
+                -signature:
+                    -h4 nome
+                    -h5 ruolo
+
+    -Footer:
+        (usando flex)
+        4 col
+            -About:
+                -h4
+                -p(piccolissimo)
+                -social icons
+            -Contact:
+                -h4
+                -p
+                -tel
+                -fax
+                -info
+            -Pages:
+                -h4
+                -ol 3 li
+                -ol 3 li
+            -Blog:
+                2 article:
+                    -sx: img   
+                    -dx: info
