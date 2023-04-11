@@ -48,20 +48,21 @@ export default {
 @use '../styles/partials/colors' as*;
 
 .complete-hr {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100vw;
+    background-color: $grey-light;
+    height: 1px;
+    border: none;
 }
 
 .top-header,
 .bottom-header {
     @include mixins.flex-space-between;
+    @include mixins.container-90;
+
 }
 
 .top-header {
     font-size: 8px;
-    height: 40px;
+    height: 30px;
     color: $grey-dark;
 
     .left {
