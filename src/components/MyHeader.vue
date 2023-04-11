@@ -1,13 +1,29 @@
 <script >
+import { store } from '../store.js';
 export default {
-    name: 'MyHeader'
+    name: 'MyHeader',
+    data() {
+        return {
+            store
+        }
+    }
 }
 </script>
 
 <template>
     <div class="top-header">
-        <span class="language">English</span>
-        <i class="fa-solid fa-chevron-down"></i>
+        <div class="left">
+            <span class="language">English</span>
+            &nbsp;
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
+        <div class="right">
+            <span class="language">English</span>
+            &nbsp;
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
 
     </div>
 
@@ -19,9 +35,11 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../styles/partials/mixins';
+
 .top-header,
 .bottom-header {
-    display: flex;
+    @include mixins.flex-space-between;
 }
 
 .top-header {

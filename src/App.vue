@@ -15,9 +15,7 @@ export default {
 </script>
 
 <template>
-  <div>ciao</div>
   <MyHeader />
-  ciao
 </template>
 
 <style scoped lang="scss">
