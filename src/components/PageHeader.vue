@@ -59,11 +59,21 @@ export default {
             </div>
         </div>
 
+        <div class="client-plan">
+            <a href="#" class="plan">
+                <i class="fa-solid fa-bullhorn"></i>
+                <span>Become an Instructor</span>
+            </a>
+
+            <a href="#" class="plan">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Become an Instructor</span>
+            </a>
+        </div>
+
+        <div class="user-login"></div>
 
     </div>
-    <div class="client-plan"></div>
-
-    <div class="user-login"></div>
 </template>
 
 
@@ -158,7 +168,7 @@ export default {
 
             input,
             button {
-                height: 30px;
+                height: 28px;
                 border: none;
             }
 
@@ -166,19 +176,41 @@ export default {
                 background-color: $button-blue;
                 color: $white;
                 font-size: 12px;
-                width: 30px;
+                width: 40px;
             }
 
             input {
                 background-color: $grey-light;
-                color: $grey-dark;
+                color: $black-thunder;
                 font-size: 10px;
                 padding-left: 5px;
-                width: 200px;
+                width: 300px;
             }
         }
 
     }
+
+    .client-plan {
+        @include mixins.flex-align-center;
+        font-size: 8px;
+        gap: 10px;
+
+        a {
+            text-decoration: none;
+
+            i {
+                color: $button-blue;
+            }
+
+            span {
+                margin-left: 5px;
+                color: $grey-darker;
+
+            }
+        }
+    }
+
+
 
 }
 </style>
