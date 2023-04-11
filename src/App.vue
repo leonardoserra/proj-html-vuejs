@@ -15,7 +15,11 @@ export default {
 </script>
 
 <template>
+  <div>ciao</div>
   <MyHeader />
+  ciao
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+@use './styles/general.scss'
+</style>

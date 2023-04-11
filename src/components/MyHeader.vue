@@ -2,14 +2,12 @@
 export default {
     name: 'MyHeader'
 }
-
-
-
 </script>
 
 <template>
     <div class="top-header">
         <span class="language">English</span>
+        <i class="fa-solid fa-chevron-down"></i>
 
     </div>
 
@@ -28,5 +26,6 @@ export default {
 
 .top-header {
     font-size: 10px;
+    height: 50px;
 }
 </style>
