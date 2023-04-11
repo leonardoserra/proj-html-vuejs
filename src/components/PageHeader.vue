@@ -1,12 +1,15 @@
 <script >
 import { store } from '../store.js';
-
+import MySearchBar from './MySearchBar.vue'
 export default {
     name: 'PageHeader',
     data() {
         return {
             store
         }
+    },
+    components: {
+        MySearchBar
     }
 }
 </script>
@@ -40,7 +43,16 @@ export default {
 
     <div class="bottom-header">
 
+        <div class="logo">
+            <img src="../assets/images/MasterStudy_logo.svg" alt="master_study_logo" />
+        </div>
+
+        <MySearchBar />
+
     </div>
+    <div class="client-plan"></div>
+
+    <div class="user-login"></div>
 </template>
 
 <style scoped lang="scss">
@@ -103,5 +115,25 @@ export default {
 
 .bottom-header {
     height: 50px;
+
+    .logo {
+        @include mixins.flex-align-center;
+        height: 100%;
+
+        img {
+            height: 28px;
+        }
+    }
+
+    .search-bar {
+
+        @include mixins.flex-align-center;
+
+        .category-filter {
+            color: $grey-dark;
+            font-size: 8px;
+        }
+    }
+
 }
 </style>

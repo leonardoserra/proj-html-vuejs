@@ -4,6 +4,12 @@
     align-items: center;
 }
 
+@mixin flex-align-center {
+    display: flex;
+    align-items: center;
+
+}
+
 @mixin container-90 {
     max-width: 90%;
     margin: auto;
