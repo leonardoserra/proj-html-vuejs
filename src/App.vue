@@ -1,6 +1,6 @@
 <script >
 import { store } from './store.js';
-import MyHeader from './components/MyHeader.vue';
+import PageHeader from './components/PageHeader.vue';
 export default {
   data() {
     return {
@@ -8,14 +8,14 @@ export default {
     }
   },
   components: {
-    MyHeader
+    PageHeader
   }
 }
 
 </script>
 
 <template>
-  <MyHeader />
+  <PageHeader />
 </template>
 
 <style scoped lang="scss">
