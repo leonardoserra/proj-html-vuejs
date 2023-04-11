@@ -51,26 +51,42 @@ export default {
 
 .top-header {
     font-size: 8px;
-    height: 50px;
-    color: $grey-darker;
+    height: 40px;
+    color: $grey-dark;
 
-    i {
-        font-size: 8px;
+    .left {
+        i {
+            font-size: 8px;
+        }
     }
 
     .right {
         @include mixins.flex-space-between;
-        gap: 10px;
+        gap: 20px;
 
+        .single-category,
+        .single-icon {
+            text-decoration: none;
+
+        }
+
+        .single-category {
+            margin-left: 15px;
+
+            color: $grey-dark;
+        }
+
+        .single-icon {
+            font-size: 10px;
+            color: $grey-darker;
+            margin-left: 10px;
+        }
     }
 
-    .single-category,
-    .single-icon {
-        text-decoration: none;
-        color: $grey-darker;
-        margin-left: 5px;
 
-    }
+}
 
+.bottom-header {
+    height: 50px;
 }
 </style>

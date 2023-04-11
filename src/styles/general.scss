@@ -1,7 +1,17 @@
 @use './partials/colors' as*;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Open Sans', sans-serif;
-    // font-weight: 100;
+}
+
+body {
     color: $black-tunder;
+    max-width: 90%;
+    margin: auto;
 }
