@@ -1,5 +1,6 @@
 <script >
 import { store } from '../store.js';
+import MyButton from './MyButton.vue'
 export default {
     name: 'PageHeader',
     data() {
@@ -8,6 +9,7 @@ export default {
         }
     },
     components: {
+        MyButton
 
     }
 }
@@ -71,7 +73,15 @@ export default {
             </a>
         </div>
 
-        <div class="user-login"></div>
+        <div class="user-login">
+            <div class="login-link">
+                <i class="fa-regular fa-user"></i>
+                <span>Log in</span>
+            </div>
+            <MyButton text="SIGN UP" />
+            <i class="fa-regular fa-bookmark"></i>
+
+        </div>
 
     </div>
 </template>
@@ -210,6 +220,25 @@ export default {
         }
     }
 
+    .user-login {
+        @include mixins.flex-align-center;
+
+        .login-link {
+            color: $button-blue;
+            font-size: 8px;
+            margin-right: 15px;
+
+            span {
+                margin-left: 5px;
+                ;
+            }
+        }
+
+        i {
+            margin-left: 15px;
+            color: $button-blue;
+        }
+    }
 
 
 }
