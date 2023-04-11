@@ -22,6 +22,9 @@ Macro-sezioni:
             -login-zone(login, sign up button, icona flag)
 
     -Main:
+        -sidebar(con pos fixed o sticky):
+            -una colonna con 5 icone
+
         -jumbotron(si ripete anche dopo quindi component):
             (usando flex)
             -parte sx:
