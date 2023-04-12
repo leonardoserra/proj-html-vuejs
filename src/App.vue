@@ -39,9 +39,6 @@ export default {
     <!-- FixedSideNav -->
     <FixedSideNav />
 
-
-
-
     <!-- sezione MyJumbotron -->
     <div class="container-60">
       <MyJumbotron />
@@ -49,7 +46,6 @@ export default {
 
     <!-- sezione features -->
     <div class="container-60 ">
-
       <div class="features-wrapper">
         <div class="features-card" v-for="(card, index) in store.featuresData" :key="index">
           <CardFeature :icon="card.icon" :title="card.title" :text="card.text" />
@@ -63,12 +59,7 @@ export default {
         <div class="single-card" v-for="(card, index) in store.galleryData" :key="index">
           <CardGallery :imagePath="card.imagePath" :title="card.title" :coursesQuantity="card.coursesQuantity" />
         </div>
-
-
-
-
       </div>
-
     </div>
 
     <!-- sezione jumbo2 -->
@@ -102,6 +93,25 @@ export default {
       </div>
     </div>
 
+    <!-- sezione analytics -->
+    <div class="analytics-section">
+      <div class="container-60">
+        <h2 class="analytics-title">We are Proud</h2>
+        <p class="analytics-text">
+          Certificate courses are instructed by highly
+          educated and qualified instructors who hold
+          doctoral and master's level degrees.
+        </p>
+        <div class="numbers">
+          <div class="slot" v-for="(data, index) in store.analyticsNumbers" :key="index">
+            <div class="number">{{ data.number }}</div>
+            <div class="subject">{{ data.subject }}</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
 
   </main>
 </template>
@@ -127,6 +137,7 @@ main {
 .container-60 {
   @include mixins.container-60;
 
+
   .features-wrapper {
     margin-bottom: 100px;
     @include mixins.flex-space-between;
@@ -143,9 +154,6 @@ main {
     justify-content: space-between;
     gap: 15px;
 
-
-
-
     .single-card {
       width: calc(100% / 3 - 30px);
       height: calc(100% / 3 - 30px);
@@ -155,17 +163,46 @@ main {
         height: calc((100% / 3) * 2 - 30px);
         flex-grow: 2;
       }
-
-
-
     }
-
   }
-
-
 
   .jumbo2-text-wrapper {
     width: 600px;
+  }
+
+}
+
+.analytics-section {
+  text-align: center;
+  margin-top: 130px;
+  background-image: url('./assets/images/we_proud.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: $grey-light;
+  height: 900px;
+  background-position: bottom;
+
+  .analytics-title {
+    font-size: 4rem;
+    font-weight: 100;
+    padding-top: 130px;
+  }
+
+  .analytics-text {
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding-top: 50px
+  }
+
+  .numbers {
+    padding-top: 130px;
+    @include mixins.flex-center;
+    gap: 40px;
+
+    .number {
+      font-size: 5rem;
+      font-weight: 100;
+    }
   }
 
 }
@@ -223,11 +260,8 @@ main {
         width: calc(100% / 6 - 20px);
         height: 310px;
         border: 1px solid $grey-light;
-
       }
-
     }
   }
-
 }
 </style>

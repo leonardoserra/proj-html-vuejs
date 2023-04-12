@@ -303,6 +303,27 @@ export const store = reactive(
                 hotPill: false,
                 specialPill: false
             }
+        ],
+        analyticsNumbers: [
+            {
+                number: '2000',
+                subject: 'STUDENTS'
+            },
+
+            {
+                number: '950',
+                subject: 'COURSES'
+            },
+
+            {
+                number: '1600',
+                subject: 'HOURS VIDEO'
+            },
+
+            {
+                number: '150',
+                subject: 'COUNTRIES REACHED'
+            }
         ]
     }
 
