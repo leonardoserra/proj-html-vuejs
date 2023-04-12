@@ -112,13 +112,13 @@ export default {
 }
 
 .top-header {
-    font-size: 8px;
-    height: 30px;
+    font-size: 13px;
+    height: 40px;
     color: $grey-dark;
 
     .left {
         i {
-            font-size: 8px;
+            font-size: 11px;
             text-decoration: none;
             color: $grey-dark;
 
@@ -150,16 +150,18 @@ export default {
 
             .pill {
                 position: absolute;
-                bottom: 10px;
-                right: 0;
+                bottom: 13px;
+                right: -8px;
                 @include mixins.pill;
                 background-color: $pill-red;
+                font-size: 0.5rem;
+
             }
         }
 
 
         .single-icon {
-            font-size: 10px;
+            font-size: 13px;
             color: $grey-darker;
             margin-left: 10px;
         }
