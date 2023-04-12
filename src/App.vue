@@ -113,9 +113,9 @@ main {
   background-image: url('./assets/images/Untitled-1-1-1-1-1.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 380px;
+  height: 500px;
   margin: 50px 0;
-  padding-top: 110px;
+  padding-top: 70px;
 }
 
 .container-60 {
@@ -159,7 +159,7 @@ main {
 
 
   .jumbo2-text-wrapper {
-    width: 355px;
+    width: 600px;
   }
 
 }
