@@ -5,6 +5,7 @@ import MyJumbotron from './components/MyJumbotron.vue';
 import CardFeature from './components/CardFeature.vue';
 import CardGallery from './components/CardGallery.vue';
 import TitleParagraphButton from './components/TitleParagraphButton.vue';
+import FixedSideNav from './components/FixedSideNav.vue';
 export default {
   data() {
     return {
@@ -16,7 +17,8 @@ export default {
     MyJumbotron,
     CardFeature,
     CardGallery,
-    TitleParagraphButton
+    TitleParagraphButton,
+    FixedSideNav
   }
 }
 
@@ -29,6 +31,12 @@ export default {
   </header>
 
   <main>
+    <!-- FixedSideNav -->
+
+    <FixedSideNav />
+
+
+
 
     <!-- sezione MyJumbotron -->
     <div class="container-60">
