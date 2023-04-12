@@ -211,7 +211,7 @@ main {
       .single-card-course {
         margin-bottom: 5px;
         width: calc(100% / 6 - 10px);
-        height: 200px;
+        height: 190px;
         border: 1px solid $grey-light;
       }
     }

@@ -55,7 +55,11 @@ export default {
                     </div>
                 </div>
 
-                <div class="right"></div>
+                <div class="right">
+                    <div v-if="fullPrice" class="full-price">${{ fullPrice }}</div>
+                    <div v-if="price" class="price">${{ price }}</div>
+                    <div v-if="!price && free" class="free">Free</div>
+                </div>
 
             </div>
 
@@ -119,6 +123,7 @@ export default {
                 }
 
                 .rate {
+
                     span {
                         font-size: 0.45rem;
                     }
@@ -131,7 +136,15 @@ export default {
                 }
             }
 
-            .right {}
+            .right {
+                font-size: 0.4rem;
+                font-weight: 600;
+
+                .full-price {
+                    color: $grey-dark;
+                    text-decoration: line-through;
+                }
+            }
         }
     }
 }
