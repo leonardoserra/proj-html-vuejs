@@ -33,17 +33,17 @@ export default {
 .side-nav {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
-    width: 25px;
-    padding: 10px;
+    width: 30px;
+    padding: 5px;
     position: fixed;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
     border: 1px $grey-light;
     box-shadow: -0.5px 0px 8px $grey-dark;
-    border-radius: 1px;
+    border-radius: 1.5px;
     background-color: $white;
 
     i {
