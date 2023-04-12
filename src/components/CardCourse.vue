@@ -6,7 +6,7 @@ export default {
         category: String,
         title: String,
         duration: String,
-        rate: String,
+        rate: Number,
         fullPrice: String,
         price: String,
         free: Boolean,
@@ -35,6 +35,29 @@ export default {
             </div>
             <div class="title">{{ title }}</div>
             <hr class="horizontal-rule" />
+
+            <div class="under-info">
+                <div class="left">
+
+                    <div class="duration" v-if="duration">
+                        <span>
+                            <i class="fa-regular fa-clock"></i>&nbsp;
+                        </span>
+                        <span>{{ duration }}&nbsp;Hours</span>
+                    </div>
+
+                    <div class="rate" v-if="rate">
+                        <img v-for="(starFull, index) in rate" :key="index" src="../assets/images/starfull.svg"
+                            alt="star_full" class="full-star">
+                        <img v-for="(starEmpty, index) in 5 - rate" :key="index" src="../assets/images/staremptyl.svg"
+                            alt="star_empty" class="empty-star">
+                        <span>&nbsp;{{ rate }}</span>
+                    </div>
+                </div>
+
+                <div class="right"></div>
+
+            </div>
 
         </div>
 
@@ -84,6 +107,31 @@ export default {
             height: 0.1px;
             border: none;
             background-color: $grey-light;
+        }
+
+        .under-info {
+            padding-top: 5px;
+            @include mixins.flex-space-between;
+
+            .left {
+                .duration {
+                    font-size: 0.35rem;
+                }
+
+                .rate {
+                    span {
+                        font-size: 0.45rem;
+                    }
+
+                    .full-star,
+                    .empty-star {
+                        width: 10%;
+                    }
+
+                }
+            }
+
+            .right {}
         }
     }
 }
