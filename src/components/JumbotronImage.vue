@@ -4,8 +4,7 @@ export default {
 }
 </script>
 <template>
-    <div class="wrapper pos-rel">
-        <img class="base" src="../assets/images/base.png" alt="base" />
+    <div class="wrapper">
         <img class="pos-abs bubblespeech" src="../assets/images/bubblespeech.png" alt="base" />
         <img class="pos-abs magnifier" src="../assets/images/magnifier.png" alt="base" />
         <img class="pos-abs book1" src="../assets/images/book1.png" alt="base" />
@@ -18,13 +17,12 @@ export default {
 @use '../styles/partials/mixins';
 @use '../styles/partials/colors' as*;
 
-.wrapper,
-.base {
-    width: 100%;
-    height: 100%;
-}
-
-.pos-rel {
+.wrapper {
+    background-image: url("../assets/images/base.png");
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
     @include mixins.pos-rel;
 }
 
@@ -32,7 +30,33 @@ export default {
     position: absolute;
 }
 
+.bubblespeech,
+.book1,
+.book2 {
+    scale: 0.6;
+}
+
+.magnifier {
+    scale: 0.7;
+}
+
 .bubblespeech {
-    right: 0;
+    right: 8px;
+    top: 35px;
+}
+
+.magnifier {
+    right: 37px;
+    bottom: 150px;
+}
+
+.book1 {
+    left: 222px;
+    top: 44px;
+}
+
+.book2 {
+    right: 68px;
+    bottom: 85px;
 }
 </style>
