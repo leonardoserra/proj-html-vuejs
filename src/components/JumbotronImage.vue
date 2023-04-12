@@ -9,6 +9,7 @@ export default {
         <img class="pos-abs magnifier" src="../assets/images/magnifier.png" alt="base" />
         <img class="pos-abs book1" src="../assets/images/book1.png" alt="base" />
         <img class="pos-abs book2" src="../assets/images/book2.png" alt="base" />
+        <img class="pos-abs moon" src="../assets/images/moon.png" alt="base" />
     </div>
 </template>
 
@@ -20,7 +21,7 @@ export default {
 .wrapper {
     background-image: url("../assets/images/base.png");
     width: 400px;
-    height: 400px;
+    height: 370px;
     background-size: contain;
     background-repeat: no-repeat;
     @include mixins.pos-rel;
@@ -32,7 +33,8 @@ export default {
 
 .bubblespeech,
 .book1,
-.book2 {
+.book2,
+.moon {
     scale: 0.6;
 }
 
@@ -47,7 +49,7 @@ export default {
 
 .magnifier {
     right: 37px;
-    bottom: 150px;
+    bottom: 125px;
 }
 
 .book1 {
@@ -57,6 +59,12 @@ export default {
 
 .book2 {
     right: 68px;
-    bottom: 85px;
+    bottom: 55px;
+}
+
+.moon {
+    left: 61px;
+    top: 77px;
+    filter: grayscale(0.9);
 }
 </style>

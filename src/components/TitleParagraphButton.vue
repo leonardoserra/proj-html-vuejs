@@ -35,7 +35,7 @@ export default {
 h2 {
     font-weight: 100;
     margin-bottom: 1rem;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
 }
 
 p {

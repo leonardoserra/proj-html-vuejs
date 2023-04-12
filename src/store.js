@@ -26,7 +26,13 @@ export const store = reactive(
             title: 'Start Investing in You',
             paragraph: "With over 1200 courses in 18 subjects, you're guaranteed to find something that's right for you.",
             buttonText: 'JOIN FOR FREE'
-        }
+        },
+
+        featuresData: [
+            {
+
+            }
+        ]
     }
 
 );
