@@ -39,8 +39,19 @@ export default {
 @use '../styles/partials/colors' as*;
 
 .card {
+    width: 100%;
+    height: 100%;
+
     .info {
         @include mixins.flex-space-between;
+
+        .course-name {
+            font-size: 0.6rem;
+        }
+
+        .course-quantity {
+            font-size: 0.4rem;
+        }
     }
 
     .img-wrapper {

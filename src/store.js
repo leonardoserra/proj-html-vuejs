@@ -49,6 +49,12 @@ export const store = reactive(
             buttonText: 'JOIN FOR FREE'
         },
 
+        jumbo2Data: {
+            title: 'Limitless learning, more possibilities',
+            paragraph: "Online courses open the opportunity for learning to almost anyone, regardless of their scheduling commitments.",
+            buttonText: 'READ MORE'
+        },
+
         featuresData: [
             {
                 icon: 'earth-americas',

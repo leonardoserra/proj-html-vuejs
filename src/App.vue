@@ -4,6 +4,7 @@ import PageHeader from './components/PageHeader.vue';
 import MyJumbotron from './components/MyJumbotron.vue';
 import CardFeature from './components/CardFeature.vue';
 import CardGallery from './components/CardGallery.vue';
+import TitleParagraphButton from './components/TitleParagraphButton.vue';
 export default {
   data() {
     return {
@@ -14,7 +15,8 @@ export default {
     PageHeader,
     MyJumbotron,
     CardFeature,
-    CardGallery
+    CardGallery,
+    TitleParagraphButton
   }
 }
 
@@ -55,6 +57,16 @@ export default {
 
     </div>
 
+    <!-- sezione jumbo2 -->
+    <div class="jumbo2">
+      <div class="container-60">
+        <div class="jumbo2-text-wrapper">
+          <TitleParagraphButton :title="store.jumbo2Data.title" :paragraph="store.jumbo2Data.paragraph"
+            :buttonText="store.jumbo2Data.buttonText" />
+        </div>
+      </div>
+    </div>
+
 
   </main>
 </template>
@@ -66,6 +78,15 @@ export default {
 
 main {
   margin-top: 30px;
+}
+
+.jumbo2 {
+  background-image: url('./assets/images/Untitled-1-1-1-1-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 380px;
+  margin: 50px 0;
+  padding-top: 110px;
 }
 
 .container-60 {
@@ -83,25 +104,34 @@ main {
   }
 
   .gallery-wrapper {
+    margin-top: 55px;
     @include mixins.flex-wrap;
     gap: 15px;
-    height: 300px;
+    justify-content: space-between;
+
 
 
     .single-card {
-      width: calc(100% / 3 - 30px);
+      width: calc(100% / 3 - 15px);
+      height: calc(100% / 3 - 15px);
     }
 
     // .single-card:first-child {
-    //   width: calc(100% / 3 * 2 - 30px);
-    //   height: calc(100% / 3 * 2 - 30px);
+    //   width: calc(100% / 3 * 2 - 7.5px);
+    //   height: calc(100% / 3 * 2 - 7.5px);
     //   flex-grow: 0;
     // }
 
+
     // .single-card:nth-child(2) {
-    //   width: calc(100% / 3);
-    //   height: calc(100% / 3);
+    //   width: calc(100% / 3 );
+    //   height: calc(100% / 3 );
     // }
+  }
+
+
+  .jumbo2-text-wrapper {
+    width: 355px;
   }
 }
 </style>
