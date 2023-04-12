@@ -178,7 +178,7 @@ main {
   background-image: url('./assets/images/we_proud.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: $grey-light;
+  background-color: $grey-hover;
   height: 900px;
   background-position: bottom;
 
@@ -197,11 +197,27 @@ main {
   .numbers {
     padding-top: 130px;
     @include mixins.flex-center;
-    gap: 40px;
+    // gap: 60px;
+
+    .slot {
+      text-align: center;
+      width: 450px;
+      border-right: 2px solid $grey-light;
+      padding: 20px 0;
+      ;
+
+      &:last-child {
+        border: none;
+      }
+    }
 
     .number {
       font-size: 5rem;
       font-weight: 100;
+    }
+
+    .subject {
+      font-size: 1.5rem;
     }
   }
 
