@@ -79,8 +79,10 @@ export default {
 
         <div class="user-login">
             <div class="login-link">
-                <i class="fa-regular fa-user"></i>
-                <span>Log in</span>
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Log in</span>
+                </a>
             </div>
             <MyButton text="SIGN UP" />
             <i class="fa-regular fa-bookmark"></i>
@@ -252,13 +254,18 @@ export default {
         @include mixins.flex-align-center;
 
         .login-link {
-            color: $button-blue;
             font-size: 8px;
             margin-right: 15px;
 
+            a {
+                color: $button-blue;
+                text-decoration: none;
+
+            }
+
             span {
                 margin-left: 5px;
-                ;
+
             }
         }
 

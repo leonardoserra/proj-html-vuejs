@@ -31,6 +31,7 @@ export default {
 @use '../styles/partials/colors' as*;
 
 .side-nav {
+    z-index: 100;
     display: flex;
     flex-direction: column;
     gap: 5px;

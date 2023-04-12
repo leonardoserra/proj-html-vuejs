@@ -143,16 +143,16 @@ main {
       width: calc(100% / 3 - 15px);
       height: calc(100% / 3 - 15px);
 
-      // &:first-child {
-      //   width: calc(100% / 3 * 2 - 7.5px);
-      //   height: calc(100% / 3 * 2 - 7.5px);
-      //   flex-grow: 0;
-      // }
+      &:first-child {
+        width: calc(100% / 3 * 2 - 7.5px);
+        height: calc(100% / 3 * 2 - 7.5px);
+        flex-grow: 0;
+      }
 
-      // &:nth-child(2) {
-      //   width: calc(100% / 3 - 15px);
-      //   height: calc(100% / 3 - 15px);
-      // }
+      &:nth-child(2) {
+        width: calc(100% / 3 - 15px);
+        height: calc(100% / 3 - 15px);
+      }
     }
 
 
@@ -212,7 +212,7 @@ main {
         margin-bottom: 5px;
         width: calc(100% / 6 - 10px);
         height: 200px;
-        border: 1px solid red;
+        border: 1px solid $grey-light;
       }
     }
   }

@@ -33,6 +33,9 @@ export default {
             <div class="category">
                 <a href="">{{ category }} &gt;</a>
             </div>
+            <div class="title">{{ title }}</div>
+            <hr class="horizontal-rule" />
+
         </div>
 
     </div>
@@ -63,7 +66,24 @@ export default {
 
         .category {
             font-size: 0.4rem;
-            color: $grey-dark;
+
+            a {
+                text-decoration: none;
+                color: $grey-dark;
+            }
+        }
+
+        .title {
+            margin-top: 5px;
+            font-size: 0.5rem;
+        }
+
+        .horizontal-rule {
+            border-radius: 0.3px;
+            margin-top: 8px;
+            height: 0.1px;
+            border: none;
+            background-color: $grey-light;
         }
     }
 }
