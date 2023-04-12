@@ -29,6 +29,12 @@ export default {
         <div class="image-wrapper">
             <img class="course-image" :src="getImageURL(`../assets/images/${imagePath}`)" :alt="title">
         </div>
+        <div class="info-wrapper">
+            <div class="category">
+                <a href="">{{ category }} &gt;</a>
+            </div>
+        </div>
+
     </div>
 </template>
 
@@ -49,6 +55,15 @@ export default {
             object-fit: cover;
             height: 100px;
             width: 100%;
+        }
+    }
+
+    .info-wrapper {
+        padding: 10px 8px 8px;
+
+        .category {
+            font-size: 0.4rem;
+            color: $grey-dark;
         }
     }
 }
