@@ -111,6 +111,22 @@ export const store = reactive(
                 title: 'Photography',
                 coursesQuantity: '4'
             }
+        ],
+
+        recentCoursesNav: [
+            'All Categories',
+            'Art',
+            'Exercise',
+            'Material Design',
+            'Music',
+            'Photography',
+            'Software Development'
+        ],
+
+        coursesGalleryData: [
+            {
+
+            }
         ]
     }
 

@@ -75,6 +75,16 @@ export default {
       </div>
     </div>
 
+    <!-- recent courses section -->
+    <div class="container-90">
+      <div class="recent-courses-wrapper">
+        <h2>Recent Courses</h2>
+        <ul>
+          <li v-for="item in store.recentCoursesNav"><a href="#">{{ item }}</a></li>
+        </ul>
+      </div>
+    </div>
+
 
   </main>
 </template>
@@ -117,29 +127,71 @@ main {
     gap: 15px;
     justify-content: space-between;
 
-
-
     .single-card {
       width: calc(100% / 3 - 15px);
       height: calc(100% / 3 - 15px);
+
+      // &:first-child {
+      //   width: calc(100% / 3 * 2 - 7.5px);
+      //   height: calc(100% / 3 * 2 - 7.5px);
+      //   flex-grow: 0;
+      // }
+
+      // &:nth-child(2) {
+      //   width: calc(100% / 3 - 15px);
+      //   height: calc(100% / 3 - 15px);
+      // }
     }
 
-    // .single-card:first-child {
-    //   width: calc(100% / 3 * 2 - 7.5px);
-    //   height: calc(100% / 3 * 2 - 7.5px);
-    //   flex-grow: 0;
-    // }
 
-
-    // .single-card:nth-child(2) {
-    //   width: calc(100% / 3 );
-    //   height: calc(100% / 3 );
-    // }
   }
 
 
   .jumbo2-text-wrapper {
     width: 355px;
   }
+
+}
+
+.container-90 {
+  @include mixins.container-90;
+
+  .recent-courses-wrapper {
+    h2 {
+      text-align: center;
+      font-weight: 100;
+      margin-bottom: 1rem;
+      font-size: 2.1rem;
+    }
+
+    ul {
+      margin: auto;
+      max-width: 60%;
+      @include mixins.flex-space-between;
+      list-style: none;
+      margin-bottom: 30px;
+
+      li {
+        font-size: 0.6rem;
+
+        a {
+          color: $button-blue;
+          text-decoration: none;
+        }
+
+        &:first-child {
+          border-radius: 10px;
+          background-color: $grey-light;
+          padding: 5px 7px;
+
+          a {
+            color: $grey-dark;
+          }
+        }
+
+      }
+    }
+  }
+
 }
 </style>
