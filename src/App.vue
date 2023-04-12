@@ -203,6 +203,18 @@ main {
 
       }
     }
+
+    .course-cards-wrapper {
+      @include mixins.flex-space-between-wrap;
+      gap: 5px;
+
+      .single-card-course {
+        margin-bottom: 5px;
+        width: calc(100% / 6 - 10px);
+        height: 200px;
+        border: 1px solid red;
+      }
+    }
   }
 
 }
