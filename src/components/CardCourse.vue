@@ -11,9 +11,9 @@ export default {
         price: String,
         free: Boolean,
         featured: Boolean,
-        new: Boolean,
-        hot: Boolean,
-        special: Boolean
+        newPill: Boolean,
+        hotPill: Boolean,
+        specialPill: Boolean
     },
     methods: {
         getImageURL: function (path) {
@@ -25,7 +25,12 @@ export default {
 }
 </script>
 <template>
-    <div class="card">
+    <div class="card" :class="featured ? 'featured' : ''">
+        <div class="pill">
+            <div v-if="specialPill" class="special">SPECIAL</div>
+            <div v-if="newPill" class="new"> NEW </div>
+            <div v-if="hotPill" class="hot"> HOT </div>
+        </div>
         <div class="image-wrapper">
             <img class="course-image" :src="getImageURL(`../assets/images/${imagePath}`)" :alt="title">
         </div>
@@ -73,9 +78,44 @@ export default {
 @use '../styles/partials/mixins';
 @use '../styles/partials/colors' as*;
 
+.card.featured {
+    border: 1px solid $pill-yellow;
+}
+
 .card {
     width: 100%;
     height: 100%;
+    position: relative;
+
+
+
+    .pill {
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        text-align: center;
+        font-size: 0.6rem;
+
+        .new,
+        .hot,
+        .special {
+            @include mixins.pill;
+        }
+
+        .new {
+            background-color: $pill-green;
+        }
+
+        .hot {
+            background-color: $pill-red;
+
+        }
+
+        .special {
+            background-color: $pill-yellow;
+
+        }
+    }
 
     .image-wrapper {
         width: 100%;

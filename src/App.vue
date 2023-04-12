@@ -90,7 +90,8 @@ export default {
           <div class="single-card-course" v-for="(card, index) in store.coursesGalleryData" :key="index">
             <CardCourse :imagePath="card.imagePath" :category="card.category" :title="card.title"
               :duration="card.duration" :rate="card.rate" :fullPrice="card.fullPrice" :price="card.price"
-              :free="card.free" :featured="card.featured" :new="card.new" :hot="card.hot" :special="card.special" />
+              :free="card.free" :featured="card.featured" :newPill="card.newPill" :hotPill="card.hotPill"
+              :specialPill="card.specialPill" />
 
 
           </div>
@@ -212,9 +213,11 @@ main {
       .single-card-course {
         margin-bottom: 15px;
         width: calc(100% / 6 - 20px);
-        height: 250px;
+        height: 300px;
         border: 1px solid $grey-light;
+
       }
+
     }
   }
 

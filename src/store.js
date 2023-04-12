@@ -134,9 +134,9 @@ export const store = reactive(
                 price: '',
                 free: true,
                 featured: false,
-                new: false,
-                hot: false,
-                special: false
+                newPill: false,
+                hotPill: false,
+                specialPill: false
             },
 
             {
@@ -149,9 +149,9 @@ export const store = reactive(
                 price: '45',
                 free: true,
                 featured: true,
-                new: true,
-                hot: false,
-                special: false
+                newPill: true,
+                hotPill: false,
+                specialPill: false
             },
 
             {
@@ -164,9 +164,9 @@ export const store = reactive(
                 price: '',
                 free: true,
                 featured: false,
-                new: false,
-                hot: true,
-                special: false
+                newPill: false,
+                hotPill: true,
+                specialPill: false
             },
 
             {
@@ -179,9 +179,9 @@ export const store = reactive(
                 price: '49',
                 free: true,
                 featured: false,
-                new: false,
-                hot: false,
-                special: true
+                newPill: false,
+                hotPill: false,
+                specialPill: true
             },
 
             {
@@ -194,9 +194,9 @@ export const store = reactive(
                 price: '',
                 free: false,
                 featured: false,
-                new: false,
-                hot: false,
-                special: false
+                newPill: false,
+                hotPill: false,
+                specialPill: false
             },
 
             {
@@ -209,9 +209,9 @@ export const store = reactive(
                 price: '70',
                 free: true,
                 featured: false,
-                new: false,
-                hot: false,
-                special: false
+                newPill: false,
+                hotPill: false,
+                specialPill: false
             },
 
             {
@@ -224,9 +224,9 @@ export const store = reactive(
                 price: '20',
                 free: true,
                 featured: false,
-                new: false,
-                hot: false,
-                special: false
+                newPill: false,
+                hotPill: false,
+                specialPill: false
             },
 
             {
@@ -239,9 +239,9 @@ export const store = reactive(
                 price: '60',
                 free: true,
                 featured: false,
-                new: false,
-                hot: false,
-                special: false
+                newPill: false,
+                hotPill: false,
+                specialPill: false
             },
 
             {
@@ -254,9 +254,9 @@ export const store = reactive(
                 price: '79',
                 free: true,
                 featured: false,
-                new: false,
-                hot: false,
-                special: false
+                newPill: false,
+                hotPill: false,
+                specialPill: false
             },
 
             {
@@ -269,9 +269,9 @@ export const store = reactive(
                 price: '',
                 free: true,
                 featured: false,
-                new: false,
-                hot: false,
-                special: true
+                newPill: false,
+                hotPill: false,
+                specialPill: true
             },
 
             {
@@ -284,9 +284,9 @@ export const store = reactive(
                 price: '',
                 free: true,
                 featured: false,
-                new: false,
-                hot: false,
-                special: true
+                newPill: false,
+                hotPill: false,
+                specialPill: true
             },
 
             {
@@ -299,9 +299,9 @@ export const store = reactive(
                 price: '',
                 free: true,
                 featured: false,
-                new: false,
-                hot: false,
-                special: false
+                newPill: false,
+                hotPill: false,
+                specialPill: false
             }
         ]
     }
