@@ -14,7 +14,7 @@ export default {
 </script>
 <template>
     <div class="card">
-        <i :class="`fa-solid fa-${icon}`"></i>
+        <i class="icon-style" :class="`fa-solid fa-${icon}`"></i>
         <div class="title">{{ title }}</div>
         <p class="text">{{ text }}</p>
     </div>
@@ -29,11 +29,16 @@ export default {
     background-color: $grey-light;
     padding: 20px;
 
+    .icon-style {
+        color: $button-blue;
+        font-size: 1.5rem;
+
+    }
 
     .title {
         font-size: 0.6rem;
         margin-bottom: 5px;
-        margin-top: 5px;
+        margin-top: 7px;
 
     }
 
