@@ -144,7 +144,7 @@ export default {
             position: relative;
 
             .single-category {
-                margin-left: 15px;
+                margin-left: 25px;
                 color: $grey-dark;
             }
 
@@ -271,6 +271,10 @@ export default {
             span {
                 margin-left: 8px;
 
+            }
+
+            i {
+                font-size: 0.8rem;
             }
         }
 
