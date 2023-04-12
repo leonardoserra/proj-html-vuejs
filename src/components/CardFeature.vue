@@ -29,6 +29,10 @@ export default {
     background-color: $grey-light;
     padding: 20px;
 
+    &:hover {
+        background-color: $grey-hover;
+    }
+
     .icon-style {
         color: $button-blue;
         font-size: 1.5rem;
