@@ -112,8 +112,8 @@ export default {
 }
 
 .top-header {
-    font-size: 13px;
-    height: 40px;
+    font-size: 14px;
+    height: 45px;
     color: $grey-dark;
 
     .left {
@@ -171,14 +171,14 @@ export default {
 }
 
 .bottom-header {
-    height: 50px;
+    height: 80px;
 
     .logo {
         @include mixins.flex-align-center;
         height: 100%;
 
         img {
-            height: 28px;
+            height: 40px;
         }
     }
 
@@ -187,9 +187,12 @@ export default {
         @include mixins.flex-align-center;
 
         .category-filter {
+            a {
+                color: $grey-dark;
 
-            color: $grey-dark;
-            font-size: 8px;
+            }
+
+            font-size: 12px;
             margin-right: 8px;
 
             span {
@@ -202,14 +205,14 @@ export default {
 
             input,
             button {
-                height: 28px;
+                height: 40px;
                 border: none;
             }
 
             button {
                 background-color: $button-blue;
                 color: $white;
-                font-size: 12px;
+                font-size: 14px;
                 width: 40px;
 
                 &:hover {
@@ -224,9 +227,9 @@ export default {
             input {
                 background-color: $grey-light;
                 color: $black-thunder;
-                font-size: 10px;
-                padding-left: 5px;
-                width: 300px;
+                font-size: 14px;
+                padding-left: 10px;
+                width: 400px;
             }
         }
 
@@ -234,8 +237,8 @@ export default {
 
     .client-plan {
         @include mixins.flex-align-center;
-        font-size: 8px;
-        gap: 10px;
+        font-size: 14px;
+        gap: 15px;
 
         a {
             text-decoration: none;
@@ -245,7 +248,7 @@ export default {
             }
 
             span {
-                margin-left: 5px;
+                margin-left: 8px;
                 color: $grey-darker;
 
             }
@@ -256,8 +259,8 @@ export default {
         @include mixins.flex-align-center;
 
         .login-link {
-            font-size: 8px;
-            margin-right: 15px;
+            font-size: 14px;
+            margin-right: 18px;
 
             a {
                 color: $button-blue;
@@ -266,12 +269,13 @@ export default {
             }
 
             span {
-                margin-left: 5px;
+                margin-left: 8px;
 
             }
         }
 
         i {
+            font-size: 1.5rem;
             margin-left: 15px;
             color: $button-blue;
         }
