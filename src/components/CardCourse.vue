@@ -26,6 +26,10 @@ export default {
 </script>
 <template>
     <div class="card" :class="featured ? 'featured' : ''">
+        <div v-if="featured" class="featured-label">
+            FEATURED
+        </div>
+
         <div class="pill">
             <div v-if="specialPill" class="special">SPECIAL</div>
             <div v-if="newPill" class="new"> NEW </div>
@@ -80,13 +84,29 @@ export default {
 
 .card.featured {
     border: 1px solid $pill-yellow;
+
+    .featured-label {
+        position: absolute;
+        top: 17px;
+        right: 168px;
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 3px;
+        background-color: $pill-yellow;
+        color: $white;
+        display: inline-block;
+        width: 128px;
+        height: 25px;
+        transform: rotate(315deg);
+    }
+
 }
 
 .card {
+    overflow: hidden;
     width: 100%;
     height: 100%;
     position: relative;
-
 
 
     .pill {
@@ -94,7 +114,7 @@ export default {
         top: 7px;
         right: 7px;
         text-align: center;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
 
         .new,
         .hot,
@@ -123,7 +143,7 @@ export default {
 
         .course-image {
             object-fit: cover;
-            height: 100px;
+            height: 100%;
             width: 100%;
         }
     }
