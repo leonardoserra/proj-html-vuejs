@@ -14,3 +14,12 @@
     max-width: 90%;
     margin: auto;
 }
+
+@mixin container-60 {
+    max-width: 60%;
+    margin: auto;
+}
+
+@mixin pos-rel {
+    position: relative;
+}
