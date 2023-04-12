@@ -27,7 +27,7 @@ export default {
 
 .card {
     background-color: $grey-light;
-    padding: 20px;
+    padding: 40px;
 
     &:hover {
         background-color: $grey-hover;
@@ -35,19 +35,19 @@ export default {
 
     .icon-style {
         color: $button-blue;
-        font-size: 1.5rem;
+        font-size: 2rem;
 
     }
 
     .title {
-        font-size: 0.6rem;
-        margin-bottom: 5px;
-        margin-top: 7px;
+        font-size: 1rem;
+        margin-bottom: 12px;
+        margin-top: 14px;
 
     }
 
     .text {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         color: $grey-dark;
     }
 

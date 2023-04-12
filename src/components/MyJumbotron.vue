@@ -38,6 +38,7 @@ export default {
 
 .wrapper {
     @include mixins.flex-space-between;
+    margin-bottom: 55px;
 
 
     .left-container {

@@ -122,18 +122,17 @@ main {
   @include mixins.container-60;
 
   .features-wrapper {
+    margin-bottom: 100px;
     @include mixins.flex-space-between;
     height: 150px;
 
     .features-card {
+      margin: 0 10px;
       width: calc(100% / 3 - 20px);
-      gap: 20px;
-
     }
   }
 
   .gallery-wrapper {
-    margin-top: 55px;
     @include mixins.flex-wrap;
     gap: 15px;
     justify-content: space-between;
