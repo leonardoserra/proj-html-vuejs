@@ -5,13 +5,16 @@ export default {
         icon: String,
         title: String,
         text: String
+    },
+    created() {
+        console.log(this.icon);
     }
-
 }
+
 </script>
 <template>
     <div class="card">
-        <i class="icona" :class="`fa-light fa-${icon}`"></i>
+        <i :class="`fa-light fa-${icon}`"></i>
         <div class="title">{{ title }}</div>
         <p class="text">{{ text }}</p>
     </div>
@@ -26,13 +29,11 @@ export default {
     background-color: $grey-light;
     padding: 20px;
 
-    .icona {
-        margin-bottom: 5px;
-    }
 
     .title {
         font-size: 0.6rem;
         margin-bottom: 5px;
+        margin-top: 5px;
 
     }
 
