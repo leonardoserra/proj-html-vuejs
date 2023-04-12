@@ -34,13 +34,14 @@ export default {
 
 h2 {
     font-weight: 100;
-    margin-bottom: 1rem;
-    font-size: 2.1rem;
+    margin-bottom: 2rem;
+    font-size: 4rem;
 }
 
 p {
-    font-size: 0.8rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+    padding-left: 1rem;
 
 }
 </style>
