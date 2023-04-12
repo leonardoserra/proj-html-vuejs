@@ -6,6 +6,7 @@ import CardFeature from './components/CardFeature.vue';
 import CardGallery from './components/CardGallery.vue';
 import TitleParagraphButton from './components/TitleParagraphButton.vue';
 import FixedSideNav from './components/FixedSideNav.vue';
+import CardCourse from './components/CardCourse.vue';
 
 export default {
   data() {
@@ -19,7 +20,8 @@ export default {
     CardFeature,
     CardGallery,
     TitleParagraphButton,
-    FixedSideNav
+    FixedSideNav,
+    CardCourse
   }
 }
 
@@ -84,7 +86,11 @@ export default {
           <li v-for="item in store.recentCoursesNav"><a href="#">{{ item }}</a></li>
         </ul>
         <div class="course-cards-wrapper">
-          <div class="single-card-course">
+          <div class="single-card-course" v-for="(card, index) in store.coursesGalleryData" :key="index">
+            <CardCourse :imagePath="card.imagePath" :category="card.category" :title="card.title"
+              :duration="card.duration" :rate="card.rate" :fullPrice="card.fullPrice" :price="card.price"
+              :free="card.free" :featured="card.featured" :new="card.new" :hot="card.hot" :special="card.special" />
+
 
           </div>
         </div>
