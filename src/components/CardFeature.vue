@@ -14,7 +14,7 @@ export default {
 </script>
 <template>
     <div class="card">
-        <i :class="`fa-light fa-${icon}`"></i>
+        <i :class="`fa-solid fa-${icon}`"></i>
         <div class="title">{{ title }}</div>
         <p class="text">{{ text }}</p>
     </div>
