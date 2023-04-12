@@ -34,10 +34,10 @@ export default {
     z-index: 100;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     align-items: center;
-    width: 30px;
-    padding: 5px;
+    width: 50px;
+    padding: 15px;
     position: fixed;
     right: 0;
     top: 50%;
@@ -49,7 +49,7 @@ export default {
 
     i {
         color: $grey-darker;
-        font-size: 0.7rem;
+        font-size: 1.5rem;
     }
 }
 </style>
