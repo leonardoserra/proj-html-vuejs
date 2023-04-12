@@ -69,7 +69,7 @@ export default {
 
             <a href="#" class="plan">
                 <i class="fa-solid fa-briefcase"></i>
-                <span>Become an Instructor</span>
+                <span>For Enterprise</span>
             </a>
         </div>
 

@@ -31,4 +31,16 @@ export default {
 <style scoped lang="scss">
 @use '../styles/partials/mixins';
 @use '../styles/partials/colors' as*;
+
+h2 {
+    font-weight: 100;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+
+}
 </style>

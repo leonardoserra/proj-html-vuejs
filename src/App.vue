@@ -32,6 +32,10 @@ export default {
 @use './styles/partials/mixins';
 @use './styles/partials/colors' as*;
 
+main {
+  margin-top: 30px;
+}
+
 .container-60 {
   @include mixins.container-60;
 
