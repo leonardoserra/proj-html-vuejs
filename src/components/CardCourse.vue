@@ -95,7 +95,7 @@ export default {
         background-color: $pill-yellow;
         color: $white;
         display: inline-block;
-        width: 128px;
+        width: 178px;
         height: 25px;
         transform: rotate(315deg);
     }
