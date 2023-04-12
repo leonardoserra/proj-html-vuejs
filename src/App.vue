@@ -6,6 +6,7 @@ import CardFeature from './components/CardFeature.vue';
 import CardGallery from './components/CardGallery.vue';
 import TitleParagraphButton from './components/TitleParagraphButton.vue';
 import FixedSideNav from './components/FixedSideNav.vue';
+
 export default {
   data() {
     return {
@@ -79,9 +80,14 @@ export default {
     <div class="container-90">
       <div class="recent-courses-wrapper">
         <h2>Recent Courses</h2>
-        <ul>
+        <ul class="recent-course-nav">
           <li v-for="item in store.recentCoursesNav"><a href="#">{{ item }}</a></li>
         </ul>
+        <div class="course-cards-wrapper">
+          <div class="single-card-course">
+
+          </div>
+        </div>
       </div>
     </div>
 
@@ -164,7 +170,7 @@ main {
       font-size: 2.1rem;
     }
 
-    ul {
+    .recent-course-nav {
       margin: auto;
       max-width: 60%;
       @include mixins.flex-space-between;

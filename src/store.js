@@ -125,7 +125,171 @@ export const store = reactive(
 
         coursesGalleryData: [
             {
+                imagePath: 'photo-1461749280684-dccba630e2f6-544x322.jpeg',
+                category: 'Apache',
+                title: 'Web Coding and Apache Basics',
+                duration: '6',
+                rate: '',
+                fullPrice: '',
+                price: '',
+                featured: false,
+                new: false,
+                hot: false,
+                special: false
+            },
 
+            {
+                imagePath: 'cat_2-544x322.jpg',
+                category: 'Art',
+                title: 'Real Thinghs Art Painting by Jason Ni',
+                duration: '6',
+                rate: '',
+                fullPrice: '60',
+                price: '45',
+                featured: true,
+                new: true,
+                hot: false,
+                special: false
+            },
+
+            {
+                imagePath: 'course-preview-544x322.jpg',
+                category: 'Software Development',
+                title: 'Basics of Masterstudy',
+                duration: '',
+                rate: '5',
+                fullPrice: '',
+                price: '',
+                featured: false,
+                new: false,
+                hot: true,
+                special: false
+            },
+
+            {
+                imagePath: 'photo-1496307042754-b4aa456c4a2d-544x322.jpeg',
+                category: 'Electronic',
+                title: 'How to be a DJ? Make Electronic Music',
+                duration: '',
+                rate: '5',
+                fullPrice: '59',
+                price: '49',
+                featured: false,
+                new: false,
+                hot: false,
+                special: true
+            },
+
+            {
+                imagePath: '',
+                category: '',
+                title: '',
+                duration: '',
+                rate: '',
+                fullPrice: '',
+                price: '',
+                featured: false,
+                new: false,
+                hot: false,
+                special: false
+            },
+
+            {
+                imagePath: '',
+                category: '',
+                title: '',
+                duration: '',
+                rate: '',
+                fullPrice: '',
+                price: '',
+                featured: false,
+                new: false,
+                hot: false,
+                special: false
+            },
+
+            {
+                imagePath: '',
+                category: '',
+                title: '',
+                duration: '',
+                rate: '',
+                fullPrice: '',
+                price: '',
+                featured: false,
+                new: false,
+                hot: false,
+                special: false
+            },
+
+            {
+                imagePath: '',
+                category: '',
+                title: '',
+                duration: '',
+                rate: '',
+                fullPrice: '',
+                price: '',
+                featured: false,
+                new: false,
+                hot: false,
+                special: false
+            },
+
+            {
+                imagePath: '',
+                category: '',
+                title: '',
+                duration: '',
+                rate: '',
+                fullPrice: '',
+                price: '',
+                featured: false,
+                new: false,
+                hot: false,
+                special: false
+            },
+
+            {
+                imagePath: '',
+                category: '',
+                title: '',
+                duration: '',
+                rate: '',
+                fullPrice: '',
+                price: '',
+                featured: false,
+                new: false,
+                hot: false,
+                special: false
+            },
+
+            {
+                imagePath: '',
+                category: '',
+                title: '',
+                duration: '',
+                rate: '',
+                fullPrice: '',
+                price: '',
+                featured: false,
+                new: false,
+                hot: false,
+                special: false
+            },
+
+            {
+                imagePath: '',
+                category: '',
+                title: '',
+                duration: '',
+                rate: '',
+                fullPrice: '',
+                price: '',
+                featured: false,
+                new: false,
+                hot: false,
+                special: false
             }
         ]
     }
