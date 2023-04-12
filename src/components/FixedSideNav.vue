@@ -36,7 +36,7 @@ export default {
     flex-direction: column;
     gap: 25px;
     align-items: center;
-    width: 70px;
+    width: 60px;
     padding: 25px;
     position: fixed;
     right: 0;
@@ -49,7 +49,7 @@ export default {
 
     i {
         color: $grey-darker;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 </style>

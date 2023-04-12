@@ -85,6 +85,7 @@ export default {
 .card.featured {
     border: 1px solid $pill-yellow;
 
+
     .featured-label {
         position: absolute;
         top: 17px;
@@ -95,7 +96,7 @@ export default {
         background-color: $pill-yellow;
         color: $white;
         display: inline-block;
-        width: 178px;
+        width: 7vw;
         height: 25px;
         transform: rotate(315deg);
     }
