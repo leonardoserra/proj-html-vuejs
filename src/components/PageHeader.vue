@@ -28,8 +28,12 @@ export default {
 
         <div class="right">
             <div class="categories">
-                <a class="single-category" href="#" v-for="(category, index) in store.pageHeaderDatas" :key="index">{{
-                    category }}</a>
+                <div class="category-wrapper" v-for="(category, index) in store.pageHeaderDatas" :key="index">
+                    <a class="single-category" href="#">
+                        {{ category.name }}
+                    </a>
+                    <span v-if="category.new" class="pill">NEW</span>
+                </div>
             </div>
 
             <div class="icons">
@@ -124,17 +128,33 @@ export default {
         @include mixins.flex-space-between;
         gap: 20px;
 
+        .categories {
+            @include mixins.flex-space-between;
+        }
+
         .single-category,
         .single-icon {
             text-decoration: none;
 
         }
 
-        .single-category {
-            margin-left: 15px;
+        .category-wrapper {
+            position: relative;
 
-            color: $grey-dark;
+            .single-category {
+                margin-left: 15px;
+                color: $grey-dark;
+            }
+
+            .pill {
+                position: absolute;
+                bottom: 10px;
+                right: 0;
+                @include mixins.pill;
+                background-color: $pill-red;
+            }
         }
+
 
         .single-icon {
             font-size: 10px;

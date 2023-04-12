@@ -2,13 +2,34 @@ import { reactive } from 'vue';
 export const store = reactive(
     {
         pageHeaderDatas: [
-            'Courses',
-            'Zoom',
-            'Pages',
-            'Bundles',
-            'Course Format',
-            'Add Course',
-            'Demos'
+            {
+                name: 'Courses',
+                new: false
+            },
+            {
+                name: 'Zoom',
+                new: true
+            },
+            {
+                name: 'Pages',
+                new: false
+            },
+            {
+                name: 'Bundles',
+                new: false
+            },
+            {
+                name: 'Course Format',
+                new: false
+            },
+            {
+                name: 'Add Course',
+                new: true
+            },
+            {
+                name: 'Demos',
+                new: false
+            }
         ],
 
         pageHeaderIcons: [
