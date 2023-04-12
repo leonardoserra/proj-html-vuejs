@@ -34,10 +34,10 @@ export default {
     z-index: 100;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
     align-items: center;
-    width: 50px;
-    padding: 15px;
+    width: 70px;
+    padding: 25px;
     position: fixed;
     right: 0;
     top: 50%;

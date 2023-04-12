@@ -7,6 +7,7 @@ import CardGallery from './components/CardGallery.vue';
 import TitleParagraphButton from './components/TitleParagraphButton.vue';
 import FixedSideNav from './components/FixedSideNav.vue';
 import CardCourse from './components/CardCourse.vue';
+import MyButton from './components/MyButton.vue';
 
 export default {
   data() {
@@ -21,7 +22,8 @@ export default {
     CardGallery,
     TitleParagraphButton,
     FixedSideNav,
-    CardCourse
+    CardCourse,
+    MyButton
   }
 }
 
@@ -92,9 +94,10 @@ export default {
               :duration="card.duration" :rate="card.rate" :fullPrice="card.fullPrice" :price="card.price"
               :free="card.free" :featured="card.featured" :newPill="card.newPill" :hotPill="card.hotPill"
               :specialPill="card.specialPill" />
-
-
           </div>
+        </div>
+        <div class="course-button">
+          <MyButton text="SHOW ALL" />
         </div>
       </div>
     </div>
@@ -171,6 +174,11 @@ main {
   @include mixins.container-90;
 
   .recent-courses-wrapper {
+    .course-button {
+      margin-top: 50px;
+      text-align: center;
+    }
+
     h2 {
       text-align: center;
       font-weight: 100;
