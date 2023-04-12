@@ -1,5 +1,10 @@
 @use './colors' as*;
 
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @mixin flex-space-between {
     display: flex;
     justify-content: space-between;

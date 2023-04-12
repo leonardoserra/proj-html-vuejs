@@ -3,6 +3,7 @@ import { store } from './store.js';
 import PageHeader from './components/PageHeader.vue';
 import MyJumbotron from './components/MyJumbotron.vue';
 import CardFeature from './components/CardFeature.vue';
+import CardGallery from './components/CardGallery.vue';
 export default {
   data() {
     return {
@@ -12,7 +13,8 @@ export default {
   components: {
     PageHeader,
     MyJumbotron,
-    CardFeature
+    CardFeature,
+    CardGallery
   }
 }
 
@@ -41,6 +43,19 @@ export default {
       </div>
     </div>
 
+    <!-- sezione gallery -->
+    <div class="container-60 ">
+      <div class="gallery-wrapper">
+        <div class="single-card" v-for="(card, index) in store.galleryData" :key="index">
+          <CardGallery :imagePath="card.imagePath" :title="card.title" :coursesQuantity="card.coursesQuantity" />
+        </div>
+
+
+      </div>
+
+    </div>
+
+
   </main>
 </template>
 
@@ -67,5 +82,26 @@ main {
     }
   }
 
+  .gallery-wrapper {
+    @include mixins.flex-wrap;
+    gap: 15px;
+    height: 300px;
+
+
+    .single-card {
+      width: calc(100% / 3 - 30px);
+    }
+
+    // .single-card:first-child {
+    //   width: calc(100% / 3 * 2 - 30px);
+    //   height: calc(100% / 3 * 2 - 30px);
+    //   flex-grow: 0;
+    // }
+
+    // .single-card:nth-child(2) {
+    //   width: calc(100% / 3);
+    //   height: calc(100% / 3);
+    // }
+  }
 }
 </style>
