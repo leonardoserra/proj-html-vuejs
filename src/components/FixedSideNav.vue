@@ -50,6 +50,12 @@ export default {
     i {
         color: $grey-darker;
         font-size: 1.3rem;
+        transition: color 1s linear;
+
+        &:hover {
+            color: $active-button;
+
+        }
     }
 }
 </style>
