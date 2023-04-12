@@ -183,13 +183,15 @@ main {
   background-position: bottom;
 
   .analytics-title {
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 100;
     padding-top: 130px;
   }
 
   .analytics-text {
-    font-size: 1.5rem;
+    margin: auto;
+    width: 70%;
+    font-size: 1.3rem;
     font-weight: 100;
     padding-top: 50px
   }
