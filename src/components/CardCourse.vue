@@ -90,9 +90,10 @@ export default {
 
     .info-wrapper {
         padding: 10px 8px 8px;
+        height: 50%;
 
         .category {
-            font-size: 0.4rem;
+            font-size: 0.6rem;
 
             a {
                 text-decoration: none;
@@ -102,7 +103,7 @@ export default {
 
         .title {
             margin-top: 5px;
-            font-size: 0.5rem;
+            font-size: 1rem;
         }
 
         .horizontal-rule {
@@ -111,33 +112,32 @@ export default {
             height: 0.1px;
             border: none;
             background-color: $grey-light;
+            margin-bottom: 15px;
         }
 
         .under-info {
-            padding-top: 5px;
             @include mixins.flex-space-between;
 
             .left {
                 .duration {
-                    font-size: 0.35rem;
+                    font-size: 0.7rem;
                 }
 
                 .rate {
-
                     span {
-                        font-size: 0.45rem;
+                        font-size: 0.8rem;
                     }
 
                     .full-star,
                     .empty-star {
-                        width: 10%;
+                        width: 15%;
                     }
 
                 }
             }
 
             .right {
-                font-size: 0.4rem;
+                font-size: 0.8rem;
                 font-weight: 600;
 
                 .full-price {

@@ -43,14 +43,15 @@ export default {
     height: 100%;
 
     .info {
+
         @include mixins.flex-space-between;
 
         .course-name {
-            font-size: 0.6rem;
+            font-size: 1rem;
         }
 
         .course-quantity {
-            font-size: 0.4rem;
+            font-size: 0.8rem;
         }
     }
 
@@ -64,5 +65,6 @@ export default {
             width: 100%;
         }
     }
+
 }
 </style>

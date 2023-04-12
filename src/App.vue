@@ -63,6 +63,8 @@ export default {
         </div>
 
 
+
+
       </div>
 
     </div>
@@ -134,27 +136,28 @@ main {
 
   .gallery-wrapper {
     @include mixins.flex-wrap;
-    gap: 15px;
     justify-content: space-between;
+    gap: 15px;
+
+
+
 
     .single-card {
-      width: calc(100% / 3 - 15px);
-      height: calc(100% / 3 - 15px);
+      width: calc(100% / 3 - 30px);
+      height: calc(100% / 3 - 30px);
 
       &:first-child {
-        width: calc(100% / 3 * 2 - 7.5px);
-        height: calc(100% / 3 * 2 - 7.5px);
-        flex-grow: 0;
+        width: calc((100% / 3) * 2 - 30px);
+        height: calc((100% / 3) * 2 - 30px);
+        flex-grow: 2;
       }
 
-      &:nth-child(2) {
-        width: calc(100% / 3 - 15px);
-        height: calc(100% / 3 - 15px);
-      }
+
+
     }
 
-
   }
+
 
 
   .jumbo2-text-wrapper {
@@ -170,8 +173,8 @@ main {
     h2 {
       text-align: center;
       font-weight: 100;
-      margin-bottom: 1rem;
-      font-size: 2.1rem;
+      margin-bottom: 2rem;
+      font-size: 3.8rem;
     }
 
     .recent-course-nav {
@@ -179,10 +182,10 @@ main {
       max-width: 60%;
       @include mixins.flex-space-between;
       list-style: none;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
 
       li {
-        font-size: 0.6rem;
+        font-size: 1rem;
 
         a {
           color: $button-blue;
@@ -190,9 +193,9 @@ main {
         }
 
         &:first-child {
-          border-radius: 10px;
+          border-radius: 14px;
           background-color: $grey-light;
-          padding: 5px 7px;
+          padding: 8px 10px;
 
           a {
             color: $grey-dark;
@@ -204,12 +207,12 @@ main {
 
     .course-cards-wrapper {
       @include mixins.flex-space-between-wrap;
-      gap: 5px;
+      gap: 10px;
 
       .single-card-course {
-        margin-bottom: 5px;
-        width: calc(100% / 6 - 10px);
-        height: 190px;
+        margin-bottom: 15px;
+        width: calc(100% / 6 - 20px);
+        height: 250px;
         border: 1px solid $grey-light;
       }
     }
