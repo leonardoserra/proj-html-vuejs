@@ -96,7 +96,7 @@ export default {
         background-color: $pill-yellow;
         color: $white;
         display: inline-block;
-        width: 7vw;
+        width: 127px;
         height: 25px;
         transform: rotate(315deg);
     }
@@ -106,6 +106,7 @@ export default {
 .card {
     overflow: hidden;
     width: 100%;
+    min-width: 260px;
     height: 100%;
     position: relative;
 
