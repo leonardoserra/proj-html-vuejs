@@ -35,8 +35,8 @@ export default {
     <div class="container-60 ">
 
       <div class="features-wrapper">
-        <div class="features-card">
-          <CardFeature />
+        <div class="features-card" v-for="(card, index) in store.featuresData" :key="index">
+          <CardFeature :icon="card.icon" :title="card.title" :text="card.text" />
         </div>
       </div>
     </div>
@@ -58,11 +58,10 @@ main {
 
   .features-wrapper {
     @include mixins.flex-space-between;
-    height: 180px;
-    border: 1px dashed red;
+    height: 150px;
 
     .features-card {
-      width: calc(100% / 3);
+      width: calc(100% / 3 - 20px);
       gap: 20px;
 
     }
