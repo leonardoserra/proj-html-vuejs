@@ -418,6 +418,61 @@ export const store = reactive(
                 number: '150',
                 subject: 'COUNTRIES REACHED'
             }
+        ],
+
+        footerData: [
+            {
+                title: 'About',
+                link1: 'Masterstudy',
+                link2: 'StylemixThemes.',
+                text: 'is Education WordPress theme featured by Learning Management System (LMS) for online education. Developed by',
+                icons: [
+                    'facebook',
+                    'twitter',
+                    'instagram'
+                ]
+            },
+
+            {
+                title: 'Contact',
+                address: 'USA, California 20, First Avenue, California',
+                tel: '+1 212 458 300 32',
+                fax: '+1 212 375 24 14',
+                mail: 'info@masterstudy.com'
+            },
+
+            {
+                title: 'Pages',
+                list: [
+                    'Blog',
+                    'Courses',
+                    'Home',
+                    'Membership A...',
+                    'Shortcodes',
+                    'Typography'
+                ]
+            },
+
+            {
+                title: 'Blog',
+                articles: [
+                    {
+                        imagePath: 'photo-1490376840453-5f616fbebe5b-69x69.jpeg',
+                        catchPhrase: 'Our main target IS to "Developing Yourself as a Leader"',
+                        date: 'August 9, 2018'
+                    },
+
+                    {
+                        imagePath: 'photo-1517520287167-4bbf64a00d66-75x75.jpeg',
+                        catchPhrase: 'Our main target IS to "Developing Yourself as a Leader"',
+                        date: 'August 9, 2018'
+                    }
+                ]
+            }
+
+
+
+
         ]
     }
 

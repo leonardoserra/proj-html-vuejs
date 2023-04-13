@@ -9,6 +9,7 @@ import FixedSideNav from './components/FixedSideNav.vue';
 import CardCourse from './components/CardCourse.vue';
 import MyButton from './components/MyButton.vue';
 import MyBanner from './components/MyBanner.vue';
+import MyFooter from './components/MyFooter.vue';
 
 export default {
   data() {
@@ -25,7 +26,8 @@ export default {
     FixedSideNav,
     CardCourse,
     MyButton,
-    MyBanner
+    MyBanner,
+    MyFooter
   }
 }
 
@@ -193,10 +195,13 @@ export default {
           Tim Sab
         </h4>
         <div>General Developer, Stylemix Themes</div>
-
       </div>
-
     </div>
+
+    <!-- footer -->
+    <footer class="container-60">
+      <MyFooter />
+    </footer>
 
 
 
