@@ -187,7 +187,7 @@ main {
 
 .analytics-section {
   text-align: center;
-  margin-top: 130px;
+  margin-top: 90px;
   background-image: url('./assets/images/we_proud.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -198,7 +198,7 @@ main {
   .analytics-title {
     font-size: 3.8rem;
     font-weight: 100;
-    padding-top: 130px;
+    padding-top: 115px;
   }
 
   .analytics-text {
@@ -243,7 +243,7 @@ main {
 
   .recent-courses-wrapper {
     .course-button {
-      margin-top: 50px;
+      margin-top: 60px;
       text-align: center;
     }
 
