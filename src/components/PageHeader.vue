@@ -161,9 +161,9 @@ export default {
 
 
         .single-icon {
-            font-size: 13px;
+            font-size: 18px;
             color: $grey-darker;
-            margin-left: 10px;
+            margin-left: 20px;
         }
     }
 
@@ -189,11 +189,12 @@ export default {
         .category-filter {
             a {
                 color: $grey-dark;
-
             }
 
-            font-size: 12px;
+            font-size: 14px;
             margin-right: 8px;
+            font-weight: 600;
+            color: $grey-dark;
 
             span {
                 margin-left: 5px;
@@ -238,6 +239,7 @@ export default {
     .client-plan {
         @include mixins.flex-align-center;
         font-size: 14px;
+        font-weight: 500;
         gap: 15px;
 
         a {

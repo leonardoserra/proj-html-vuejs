@@ -25,6 +25,7 @@ export default {
 <template>
     <div class="cards">
 
+
         <div class="card big">
 
             <div class="img-wrapper">
@@ -129,7 +130,6 @@ export default {
 
 .cards {
     width: 100%;
-
     @include mixins.flex-wrap;
     align-items: flex-start;
     gap: 19px;

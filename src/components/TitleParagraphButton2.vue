@@ -35,12 +35,12 @@ export default {
 h2 {
     font-weight: 300;
     margin-bottom: 2rem;
-    font-size: 4rem;
+    font-size: 3rem;
     color: $black-thunder;
 }
 
 p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin-bottom: 2.5rem;
     padding-left: 1rem;
 

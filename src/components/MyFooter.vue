@@ -105,7 +105,11 @@ export default {
     margin-bottom: 100px;
 
     .categories {
-        @include mixins.flex-center;
+
+        display: flex;
+        justify-content: center;
+
+
         list-style: none;
         gap: 50px;
 

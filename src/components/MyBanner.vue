@@ -52,7 +52,7 @@ export default {
         margin: 0 20px;
 
         p {
-            font-weight: 100;
+            font-weight: 300;
         }
     }
 

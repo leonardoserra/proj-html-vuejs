@@ -23,6 +23,7 @@ button {
     border: none;
     border-radius: 25px;
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
 
     &:hover {

@@ -10,6 +10,7 @@ import CardCourse from './components/CardCourse.vue';
 import MyButton from './components/MyButton.vue';
 import MyBanner from './components/MyBanner.vue';
 import MyFooter from './components/MyFooter.vue';
+import TitleParagraphButton2 from './components/TitleParagraphButton2.vue';
 
 export default {
   data() {
@@ -23,6 +24,7 @@ export default {
     CardFeature,
     CardGallery,
     TitleParagraphButton,
+    TitleParagraphButton2,
     FixedSideNav,
     CardCourse,
     MyButton,
@@ -66,7 +68,7 @@ export default {
     <div class="jumbo2">
       <div class="container-60">
         <div class="jumbo2-text-wrapper">
-          <TitleParagraphButton :title="store.jumbo2Data.title" :paragraph="store.jumbo2Data.paragraph"
+          <TitleParagraphButton2 :title="store.jumbo2Data.title" :paragraph="store.jumbo2Data.paragraph"
             :buttonText="store.jumbo2Data.buttonText" />
         </div>
       </div>
@@ -153,7 +155,7 @@ export default {
             <h3>Become an Instructor</h3>
             <p>Teach what you love. Masterstudy gives you
               the tools to create a course.</p>
-            <MyButton text="START TECHING" />
+            <MyButton text="START TEACHING" />
           </div>
         </div>
 
@@ -217,9 +219,9 @@ main {
   background-image: url('./assets/images/Untitled-1-1-1-1-1.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 595px;
   margin: 50px 0;
-  padding-top: 70px;
+  padding-top: 170px;
 }
 
 .container-60 {
@@ -227,7 +229,7 @@ main {
 
 
   .features-wrapper {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     @include mixins.flex-space-between;
     height: 150px;
 
@@ -262,7 +264,7 @@ main {
 
   .analytics-title {
     font-size: 3.8rem;
-    font-weight: 100;
+    font-weight: 300;
     padding-top: 115px;
   }
 
@@ -270,7 +272,7 @@ main {
     margin: auto;
     width: 70%;
     font-size: 1.3rem;
-    font-weight: 100;
+    font-weight: 300;
     padding-top: 50px
   }
 
@@ -293,11 +295,11 @@ main {
 
     .number {
       font-size: 5rem;
-      font-weight: 100;
+      font-weight: 300;
     }
 
     .subject {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -314,12 +316,12 @@ main {
   @include mixins.container-90;
 
   .popupar-courses-wrapper {
-    padding-top: 50px;
+    padding-top: 100px;
 
     p {
       text-align: center;
       font-size: 1.3rem;
-      font-weight: 100;
+      font-weight: 300;
       margin-bottom: 50px;
     }
 
@@ -360,7 +362,7 @@ main {
 
     h2 {
       text-align: center;
-      font-weight: 100;
+      font-weight: 300;
       margin-bottom: 2rem;
       font-size: 3.3rem;
     }
@@ -415,9 +417,9 @@ main {
     .instructor,
     .business {
       border: 1px solid $grey-light;
-      padding: 50px;
+      padding: 75px 20px;
       @include mixins.flex-start;
-      gap: 100px;
+      gap: 50px;
 
       .right {
         max-width: 45%;
@@ -427,13 +429,13 @@ main {
       .right {
         h3 {
           font-size: 2rem;
-          font-weight: 300;
+          font-weight: 400;
           margin-bottom: 25px;
         }
 
         p {
-          font-size: 1rem;
-          font-weight: 100;
+          font-size: 1.1rem;
+          font-weight: 300;
           margin-bottom: 25px;
         }
       }
@@ -460,13 +462,13 @@ main {
 
     h2 {
       font-size: 2.3rem;
-      font-weight: 200;
+      font-weight: 400;
       margin-bottom: 50px;
     }
 
     p {
       font-size: 1.2rem;
-      font-weight: 100;
+      font-weight: 300;
       margin-bottom: 50px;
     }
 
