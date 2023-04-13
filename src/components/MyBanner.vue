@@ -51,7 +51,9 @@ export default {
         width: calc(60% - 40px);
         margin: 0 20px;
 
-
+        p {
+            font-weight: 100;
+        }
     }
 
     .right-banner {

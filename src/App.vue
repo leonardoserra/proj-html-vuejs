@@ -118,6 +118,66 @@ export default {
       <MyBanner />
     </div>
 
+    <!-- popular courses section -->
+    <div class="popular-section">
+      <div class="container-90 ">
+        <div class="popupar-courses-wrapper">
+          <h2>Popular Courses</h2>
+          <p>Discover our most popular courses forself learning</p>
+          <div class="course-cards-wrapper">
+            <div class="single-card-course" v-for="(card, index) in store.coursesPopularData" :key="index">
+              <CardCourse :imagePath="card.imagePath" :category="card.category" :title="card.title"
+                :duration="card.duration" :rate="card.rate" :fullPrice="card.fullPrice" :price="card.price"
+                :free="card.free" :featured="card.featured" :newPill="card.newPill" :hotPill="card.hotPill"
+                :specialPill="card.specialPill" />
+            </div>
+          </div>
+          <div class="course-switch">
+            <span class="left">
+              <i class="fa-solid fa-chevron-left"></i>
+            </span>
+            <span class="right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- plan-section -->
+    <div class="container-90">
+      <div class="plan-cards">
+        <div class="instructor">
+          <div class="left">
+            <img src="./assets/images/image_box_1-221x231.png" alt="instructor_plan">
+          </div>
+          <div class="right">
+            <h3>Become an Instructor</h3>
+            <p>Teach what you love. Masterstudy gives you
+              the tools to create a course.</p>
+            <MyButton text="START TECHING" />
+          </div>
+        </div>
+
+        <div class="business">
+          <div class="left">
+            <img src="./assets/images/image_box_2-234x231.png" alt="instructor_plan">
+
+          </div>
+          <div class="right">
+            <h3>Setup for Business</h3>
+            <p>Get unlimited access to 2,500 of Udemys top
+              courses for your team.</p>
+            <MyButton text="DOING BUSINESS" />
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
 
   </main>
 </template>
@@ -238,10 +298,56 @@ main {
 
 }
 
+
+// recent e popular courses
+.popular-section {
+  background-color: $grey-hover;
+
+}
+
 .container-90 {
   @include mixins.container-90;
 
-  .recent-courses-wrapper {
+  .popupar-courses-wrapper {
+    padding-top: 50px;
+
+    p {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 100;
+      margin-bottom: 50px;
+    }
+
+    .course-switch {
+      margin-top: 60px;
+      text-align: center;
+      padding-bottom: 60px;
+
+      .left,
+      .right {
+        display: inline-block;
+        height: 51px;
+        background-color: $white;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $grey-light;
+        }
+
+
+        i {
+          border: 1px solid $grey-hover;
+          font-size: 1.2rem;
+          color: $grey-dark;
+          padding: 15px 25px;
+        }
+      }
+    }
+  }
+
+  .recent-courses-wrapper,
+  .popupar-courses-wrapper {
+
     .course-button {
       margin-top: 60px;
       text-align: center;
@@ -251,7 +357,7 @@ main {
       text-align: center;
       font-weight: 100;
       margin-bottom: 2rem;
-      font-size: 3.8rem;
+      font-size: 3.3rem;
     }
 
     .recent-course-nav {
@@ -291,6 +397,40 @@ main {
         width: calc(100% / 6 - 20px);
         height: 310px;
         border: 1px solid $grey-light;
+      }
+    }
+  }
+
+  // plan-section
+  .plan-cards {
+    margin-top: 100px;
+    @include mixins.flex-space-between;
+    gap: 20px;
+
+    .instructor,
+    .business {
+      border: 1px solid $grey-light;
+      padding: 50px;
+      @include mixins.flex-start;
+      gap: 100px;
+
+      .right {
+        max-width: 45%;
+      }
+
+      .left,
+      .right {
+        h3 {
+          font-size: 2rem;
+          font-weight: 300;
+          margin-bottom: 25px;
+        }
+
+        p {
+          font-size: 1rem;
+          font-weight: 100;
+          margin-bottom: 25px;
+        }
       }
     }
   }

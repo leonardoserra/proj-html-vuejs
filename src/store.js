@@ -304,6 +304,100 @@ export const store = reactive(
                 specialPill: false
             }
         ],
+
+        coursesPopularData: [
+            {
+                imagePath: 'photo-1461749280684-dccba630e2f6-544x322.jpeg',
+                category: 'Apache',
+                title: 'Web Coding and Apache Basics',
+                duration: '6',
+                rate: 0,
+                fullPrice: '',
+                price: '',
+                free: true,
+                featured: false,
+                newPill: false,
+                hotPill: false,
+                specialPill: false
+            },
+
+            {
+                imagePath: 'cat_2-544x322.jpg',
+                category: 'Art',
+                title: 'Real Thinghs Art Painting by Jason Ni',
+                duration: '6',
+                rate: 0,
+                fullPrice: '60',
+                price: '45',
+                free: true,
+                featured: true,
+                newPill: true,
+                hotPill: false,
+                specialPill: false
+            },
+
+            {
+                imagePath: 'course-preview-544x322.jpg',
+                category: 'Software Development',
+                title: 'Basics of Masterstudy',
+                duration: '',
+                rate: 5,
+                fullPrice: '',
+                price: '',
+                free: true,
+                featured: false,
+                newPill: false,
+                hotPill: true,
+                specialPill: false
+            },
+
+            {
+                imagePath: 'photo-1496307042754-b4aa456c4a2d-544x322.jpeg',
+                category: 'Electronic',
+                title: 'How to be a DJ? Make Electronic Music',
+                duration: '',
+                rate: 5,
+                fullPrice: '59',
+                price: '49',
+                free: true,
+                featured: false,
+                newPill: false,
+                hotPill: false,
+                specialPill: true
+            },
+
+            {
+                imagePath: 'photo-1416339134316-0e91dc9ded92-scaled-544x322.jpeg',
+                category: 'Communication',
+                title: 'Design Instruments for Communication',
+                duration: '6',
+                rate: 0,
+                fullPrice: '',
+                price: '',
+                free: false,
+                featured: false,
+                newPill: false,
+                hotPill: false,
+                specialPill: false
+            },
+
+            {
+                imagePath: 'cathryn-lavery-67852-unsplash-544x322.jpg',
+                category: 'Art',
+                title: 'Make your Concept Right and Beautiful',
+                duration: '6',
+                rate: 0,
+                fullPrice: '',
+                price: '70',
+                free: true,
+                featured: false,
+                newPill: false,
+                hotPill: false,
+                specialPill: false
+            }
+
+        ],
+
         analyticsNumbers: [
             {
                 number: '2000',

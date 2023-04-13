@@ -17,12 +17,13 @@ export default {
 
 button {
     background-color: $button-blue;
-    height: 40px;
-    padding: 0 25px;
+    height: 50px;
+    padding: 0 30px;
     color: $white;
     border: none;
-    border-radius: 20px;
-    font-size: 14px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
 
     &:hover {
         background-color: $hover-button;

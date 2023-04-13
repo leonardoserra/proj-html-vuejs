@@ -112,7 +112,7 @@ export default {
     transition: border 0.5s linear, box-shadow 0.5 linear;
 
     &:hover {
-        background-color: lighten($color: $grey-hover, $amount: 0.5);
+        // background-color: lighten($color: $grey-hover, $amount: 0.5);
         cursor: pointer;
         box-shadow: 0 0 8px $grey-dark;
     }
