@@ -181,7 +181,18 @@ export default {
     <div class="testimonial-section">
       <div class="bubblespeech-testimonial">
         <div class="square"></div>
-        ciao
+        <h2>Come as you are</h2>
+        <p>MasterStudy used is an excellent workshop whether you come
+          as a counselor, advisor, administrator, or faculty member. I am
+          going home empowered. I am looking forward to attending
+          the On Course MasterStudy and the MasterStudy National
+          Conference next year and facilitating the use of this excellent
+          retention/student success course at my college.</p>
+
+        <h4 class="name">
+          Tim Sab
+        </h4>
+        <div>General Developer, Stylemix Themes</div>
 
       </div>
 
@@ -461,6 +472,19 @@ main {
     height: 530px;
     width: 745px;
     margin-left: 365px;
+    padding: 85px;
+
+    h2 {
+      font-size: 2.3rem;
+      font-weight: 200;
+      margin-bottom: 50px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 100;
+      margin-bottom: 50px;
+    }
 
     .square {
       position: absolute;
