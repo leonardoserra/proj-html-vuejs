@@ -8,6 +8,7 @@ import TitleParagraphButton from './components/TitleParagraphButton.vue';
 import FixedSideNav from './components/FixedSideNav.vue';
 import CardCourse from './components/CardCourse.vue';
 import MyButton from './components/MyButton.vue';
+import MyBanner from './components/MyBanner.vue';
 
 export default {
   data() {
@@ -23,7 +24,8 @@ export default {
     TitleParagraphButton,
     FixedSideNav,
     CardCourse,
-    MyButton
+    MyButton,
+    MyBanner
   }
 }
 
@@ -109,7 +111,11 @@ export default {
           </div>
         </div>
       </div>
+    </div>
 
+    <!-- banner section -->
+    <div class="banner-section">
+      <MyBanner />
     </div>
 
 
@@ -169,6 +175,13 @@ main {
   .jumbo2-text-wrapper {
     width: 600px;
   }
+
+
+}
+
+.banner-section {
+  background-color: $banner-green;
+  margin: auto;
 
 }
 
