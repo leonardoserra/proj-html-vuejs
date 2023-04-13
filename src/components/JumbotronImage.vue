@@ -38,7 +38,7 @@ export default {
     right: 210px;
     top: 75px;
     animation-name: floating-bubble;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
@@ -46,7 +46,7 @@ export default {
     right: 244px;
     bottom: 122px;
     animation-name: floating-magnifier;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
@@ -82,9 +82,19 @@ export default {
         top: 75px;
     }
 
+    12% {
+        right: 209px;
+        top: 76px;
+    }
+
     25% {
         right: 208px;
         top: 78px;
+    }
+
+    40% {
+        right: 207px;
+        top: 76px;
     }
 
     50% {
@@ -92,9 +102,19 @@ export default {
         top: 75px;
     }
 
+    60% {
+        right: 207px;
+        top: 73px;
+    }
+
     75% {
         right: 208px;
         top: 72px;
+    }
+
+    85% {
+        right: 209px;
+        top: 73px;
     }
 
     100% {
@@ -109,9 +129,19 @@ export default {
         bottom: 122px;
     }
 
+    12% {
+        right: 244px;
+        bottom: 123px;
+    }
+
     25% {
         right: 244px;
         bottom: 125px;
+    }
+
+    38% {
+        right: 244px;
+        bottom: 126px;
     }
 
     50% {
@@ -119,9 +149,19 @@ export default {
         bottom: 128px;
     }
 
+    62% {
+        right: 244px;
+        bottom: 127px;
+    }
+
     75% {
         right: 244px;
         bottom: 125px;
+    }
+
+    88% {
+        right: 244px;
+        bottom: 124px;
     }
 
     100% {

@@ -59,11 +59,7 @@ export default {
 
     <!--  gallery section-->
     <div class="container-60 ">
-      <!-- <div class="gallery-wrapper"> -->
-      <!-- <div class="single-card" v-for="(card, index) in store.galleryData" :key="index"> -->
       <CardGallery />
-      <!-- </div> -->
-      <!-- </div> -->
     </div>
 
     <!--  jumbo2 section-->
@@ -240,23 +236,6 @@ main {
       width: calc(100% / 3 - 20px);
     }
   }
-
-  // .gallery-wrapper {
-  //   @include mixins.flex-wrap;
-  //   justify-content: space-between;
-  //   gap: 15px;
-
-  //   .single-card {
-  //     width: calc(100% / 3 - 30px);
-  //     height: calc(100% / 3 - 30px);
-
-  //     &:first-child {
-  //       width: calc((100% / 3) * 2 - 30px);
-  //       height: calc((100% / 3) * 2 - 30px);
-  //       flex-grow: 2;
-  //     }
-  //   }
-  // }
 
   .jumbo2-text-wrapper {
     width: 600px;
