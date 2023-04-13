@@ -41,12 +41,12 @@ export default {
     <!-- FixedSideNav -->
     <FixedSideNav />
 
-    <!-- sezione MyJumbotron -->
+    <!--  MyJumbotron section-->
     <div class="container-60">
       <MyJumbotron />
     </div>
 
-    <!-- sezione features -->
+    <!--  features section-->
     <div class="container-60 ">
       <div class="features-wrapper">
         <div class="features-card" v-for="(card, index) in store.featuresData" :key="index">
@@ -55,7 +55,7 @@ export default {
       </div>
     </div>
 
-    <!-- sezione gallery -->
+    <!--  gallery section-->
     <div class="container-60 ">
       <div class="gallery-wrapper">
         <div class="single-card" v-for="(card, index) in store.galleryData" :key="index">
@@ -64,7 +64,7 @@ export default {
       </div>
     </div>
 
-    <!-- sezione jumbo2 -->
+    <!--  jumbo2 section-->
     <div class="jumbo2">
       <div class="container-60">
         <div class="jumbo2-text-wrapper">
@@ -95,7 +95,7 @@ export default {
       </div>
     </div>
 
-    <!-- sezione analytics -->
+    <!-- analytics section-->
     <div class="analytics-section">
       <div class="container-60">
         <h2 class="analytics-title">We are Proud</h2>
@@ -144,7 +144,7 @@ export default {
       </div>
     </div>
 
-    <!-- plan-section -->
+    <!-- plan section -->
     <div class="container-90">
       <div class="plan-cards">
         <div class="instructor">
@@ -173,6 +173,16 @@ export default {
 
           </div>
         </div>
+      </div>
+
+    </div>
+
+    <!-- testimonial section -->
+    <div class="testimonial-section">
+      <div class="bubblespeech-testimonial">
+        <div class="square"></div>
+        ciao
+
       </div>
 
     </div>
@@ -432,6 +442,35 @@ main {
           margin-bottom: 25px;
         }
       }
+    }
+  }
+}
+
+.testimonial-section {
+  background-image: url(./assets/images/brooke-cagle-224821-unsplash-1-1920x700.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  margin: 100px 0;
+  padding-top: 85px;
+
+
+  .bubblespeech-testimonial {
+    position: relative;
+    background-color: $white;
+    height: 530px;
+    width: 745px;
+    margin-left: 365px;
+
+    .square {
+      position: absolute;
+      background-color: $white;
+      top: calc(50% - 25px);
+      right: -10px;
+      width: 50px;
+      height: 50px;
+      // border: 1px solid black;
+      transform: rotate(45deg);
     }
   }
 }

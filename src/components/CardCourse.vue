@@ -110,6 +110,7 @@ export default {
     height: 100%;
     position: relative;
     transition: border 0.5s linear, box-shadow 0.5 linear;
+    background-color: $white;
 
     &:hover {
         // background-color: lighten($color: $grey-hover, $amount: 0.5);
