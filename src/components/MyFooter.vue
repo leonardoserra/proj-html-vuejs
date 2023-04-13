@@ -102,6 +102,7 @@ export default {
 @use '../styles/partials/colors' as*;
 
 .footer {
+    margin-bottom: 100px;
 
     .categories {
         @include mixins.flex-center;
@@ -184,6 +185,10 @@ export default {
                         text-decoration: none;
                         font-size: 0.9rem;
                         color: $black-thunder;
+
+                        &:hover {
+                            color: $active-button;
+                        }
                     }
                 }
 
