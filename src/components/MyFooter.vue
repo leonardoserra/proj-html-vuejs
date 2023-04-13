@@ -43,6 +43,12 @@ export default {
                 </ul>
                 <ul class="contact category">
                     <li class="title">{{ contact.title }}</li>
+                    <li class="text">
+                        <div class="address">{{ contact.address }}</div>
+                        <div class="tel">Tel.:&nbsp;{{ contact.tel }}</div>
+                        <div class="fax">Fax.:&nbsp;{{ contact.fax }}</div>
+                        <div class="mail"><a href="#">{{ contact.mail }}</a></div>
+                    </li>
 
                 </ul>
                 <ul class="pages category">
@@ -105,6 +111,29 @@ export default {
                     color: $grey-dark;
                 }
 
+            }
+        }
+
+        .contact {
+            .text {
+                margin-bottom: 15px;
+                font-size: 0.8rem;
+            }
+
+            .address {
+                margin-bottom: 15px;
+            }
+
+            .fax {
+                margin-bottom: 12px;
+            }
+
+            .mail {
+                a {
+                    text-decoration: none;
+                    color: $grey-dark;
+
+                }
             }
         }
     }

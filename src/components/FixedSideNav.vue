@@ -53,7 +53,9 @@ export default {
         transition: color 1s linear;
 
         &:hover {
+            background-color: $grey-hover;
             color: $active-button;
+            box-shadow: 0 0 80px $button-blue;
 
         }
     }
