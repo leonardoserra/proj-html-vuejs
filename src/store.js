@@ -77,7 +77,7 @@ export const store = reactive(
 
         galleryData: [
             {
-                imagePath: 'cat_1-1540x750',
+                imagePath: 'cat_1-740x310',
                 title: 'Software Development',
                 coursesQuantity: '5'
             },

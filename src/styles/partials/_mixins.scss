@@ -20,7 +20,7 @@
 @mixin flex-column {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     flex-wrap: wrap;
 }
