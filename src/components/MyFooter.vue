@@ -26,14 +26,16 @@ export default {
             <li class="categories">
                 <ul class="about category">
                     <li class="title">{{ about.title }}</li>
-                    <li>
+                    <li class="text">
                         <span><a href="#">{{ about.link1 }}</a></span>
                         <span>&nbsp;{{ about.text }}</span>
                         <span>&nbsp;<a href="#">{{ about.link2 }}</a></span>
                     </li>
-                    <li>
+                    <li class="icons">
                         <span v-for="(icon, index) in about.icons" :key="index">
-                            <i :class="`fa-brands fa-${icon}`"></i>
+                            <a href="#">
+                                <i :class="`fa-brands fa-${icon}`"></i>
+                            </a>
                         </span>
                     </li>
 
@@ -72,6 +74,38 @@ export default {
         .category {
             list-style: none;
             width: calc(100% / 4);
+
+            li:first-child {
+                font-weight: 600;
+                margin-bottom: 25px;
+                font-size: 1.1rem;
+
+            }
+
+            li {
+                font-size: 0.8rem;
+            }
+        }
+
+        .about {
+            .text {
+                margin-bottom: 15px;
+                font-size: 0.8rem;
+
+                a {
+                    text-decoration: none;
+                    color: $button-blue;
+                }
+            }
+
+            .icons {
+                i {
+                    font-size: 1.2rem;
+                    margin-right: 10px;
+                    color: $grey-dark;
+                }
+
+            }
         }
     }
 }
