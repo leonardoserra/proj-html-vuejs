@@ -457,15 +457,15 @@ export const store = reactive(
                 title: 'Blog',
                 articles: [
                     {
-                        imagePath: 'photo-1490376840453-5f616fbebe5b-69x69.jpeg',
+                        imagePath: 'photo-1517520287167-4bbf64a00d66-75x75.jpeg',
                         catchPhrase: 'Our main target IS to "Developing Yourself as a Leader"',
                         date: 'August 9, 2018'
                     },
 
                     {
-                        imagePath: 'photo-1517520287167-4bbf64a00d66-75x75.jpeg',
-                        catchPhrase: 'Our main target IS to "Developing Yourself as a Leader"',
-                        date: 'August 9, 2018'
+                        imagePath: 'photo-1490376840453-5f616fbebe5b-69x69.jpeg',
+                        catchPhrase: "Those Other College Expenses You Aren't Thinking About",
+                        date: 'June 3, 2015'
                     }
                 ]
             }

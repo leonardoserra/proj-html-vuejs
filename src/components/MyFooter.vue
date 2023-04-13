@@ -17,6 +17,12 @@ export default {
         console.log(this.contact)
         console.log(this.pages)
         console.log(this.blog)
+    },
+    methods: {
+        getImageURL: function (path) {
+            return new URL(path, import.meta.url).href;
+
+        }
     }
 }
 </script>
@@ -53,10 +59,35 @@ export default {
                 </ul>
                 <ul class="pages category">
                     <li class="title">{{ pages.title }}</li>
+                    <ul class="list">
+                        <li v-for="(item, index) in pages.list" :key="index">
+                            <a href="#">{{ item }}</a>
+                        </li>
+                    </ul>
 
                 </ul>
                 <ul class="blog category">
                     <li class="title">{{ blog.title }}</li>
+                    <li v-for="(article, index) in blog.articles" :key="index">
+                        <a class="article" href="#">
+                            <div class="left">
+                                <div class="img-wrapper">
+                                    <img :src="getImageURL(`../assets/images/${article.imagePath}`)"
+                                        :alt="article.imagePath" class="image">
+                                </div>
+                            </div>
+                            <div class="right">
+                                <h4 class="catchPhrase">
+                                    {{ article.catchPhrase }}
+                                </h4>
+                                <div class="date">
+                                    {{ article.date }}
+                                </div>
+                            </div>
+
+                        </a>
+
+                    </li>
 
                 </ul>
             </li>
@@ -81,7 +112,7 @@ export default {
             list-style: none;
             width: calc(100% / 4);
 
-            li:first-child {
+            .title {
                 font-weight: 600;
                 margin-bottom: 25px;
                 font-size: 1.1rem;
@@ -133,6 +164,71 @@ export default {
                     text-decoration: none;
                     color: $grey-dark;
 
+                }
+            }
+        }
+
+        .pages {
+            margin-bottom: 30px;
+
+            .list {
+                @include mixins.flex-space-between-wrap;
+                list-style: disc;
+                margin-left: 17px;
+
+                li {
+                    width: 50%;
+                    margin-bottom: 15px;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 0.9rem;
+                        color: $black-thunder;
+                    }
+                }
+
+                ;
+            }
+
+        }
+
+        .blog {
+            .article {
+                @include mixins.flex-space-between;
+                gap: 20px;
+                text-decoration: none;
+                margin-bottom: 10px;
+
+            }
+
+            .left {
+                width: 30%;
+
+                .img-wrapper {
+                    width: 65px;
+                    height: 65px;
+
+                    &:hover {
+                        box-shadow: 0 0 5px $grey-darker;
+                    }
+
+                    .image {
+                        object-fit: cover;
+                        width: 65px;
+                        height: 65px;
+
+                    }
+                }
+            }
+
+            .right {
+                width: 70%;
+                color: $grey-dark;
+
+                .catchPhrase {
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
